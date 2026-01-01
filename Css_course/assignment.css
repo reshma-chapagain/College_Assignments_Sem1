@@ -1,0 +1,115 @@
+.main{
+    width: 100%;
+    height: auto;
+    display: flex;
+    position: relative;
+}
+.container{
+    width: 300px;
+    height: 200px;
+    background-color: blue;
+    border: 2px solid black;
+    position: relative;
+}
+.box1{
+    width: 25%;
+    height: 50px;
+    background-color: red;
+    border: 2px solid black;
+    position: absolute;
+    left: 2px;
+    top: 2px;
+}
+.box2{
+    width: 25%;
+    height: 50px;
+    background-color: orange;
+    border: 2px solid black;
+    position: absolute;
+    right: 2px;
+    top: 2px;
+}
+.box3{
+    width: 25%;
+    height: 50px;
+    background-color: yellow;
+    border: 2px solid black;
+    position: absolute;
+    left: 2px;
+    bottom: 2px;
+}
+.box4{
+    width: 25%;
+    height: 50px;
+    background-color: green;
+    border: 2px solid black;
+    position: absolute;
+    right: 2px;
+    bottom: 2px;
+}
+.box5{
+    width: 35%;
+    height: 50px;
+    border: 2px solid black;
+    background-color: aqua;
+    position: absolute;
+    left: 100px;
+    top: 70px;
+}
+.header{
+    width: 35%;
+    height: 50px;
+    background-color: bisque;
+    border: 2px solid black;
+    position: relative;
+    left: 10px;
+}
+ul{
+    display: flex;
+    list-style: none;
+    position: absolute;
+    right: 2px;
+}
+li{
+    padding:5px ;
+}
+ul li a{
+    text-decoration: none;
+}
+/*ul li:hover{
+    background-color: brown;
+}*/
+ul li a:hover{
+    color: white;
+    background-color: gray;
+}
+.logo{
+    border: 2px solid black;
+    width: 20%;
+    height: 35px;
+    background-color: blueviolet;
+    position: absolute;
+    left: 10px;
+    top: 5px;
+}
+img{
+    width: 70px;
+    height: 35px;
+    position: absolute;
+    left: 10px;
+}
+.box1:hover{
+    background-color: pink;
+}
+.box2:hover{
+    background-color: rgb(164, 31, 194);
+}
+.box3:hover{
+    background-color: grey;
+}
+.box4:hover{
+    background-color: rgb(0, 255, 94);
+}
+.box5:hover{
+    background-color: rgb(88, 17, 202);
+}

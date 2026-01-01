@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+        :root{
+            --main-color:green;
+            --button:pink;
+        }
+        .container{
+            width: 30%;
+            background-color: red;
+            border: 1px solid black;
+            padding: 10px;
+            display: block;
+            justify-content: space-between;
+            margin: auto;
+        }
+        .box{
+            width: 100%;
+            height: 100px;
+          /*  background-color: var(--main-color);*/
+            animation-name: test;
+            animation-duration: 3s;
+            animation-direction: alternate-reverse;
+            animation-iteration-count: infinite;
+        }
+        button{
+            height: auto;
+            background-color: var(--button);
+            color: white;
+            padding: 10px;
+            animation-name: change;
+            animation-duration: 3s;
+            animation-direction: alternate-reverse;
+            animation-iteration-count: infinite;
+        }
+        .box1{
+            width: 100%;
+            height: 100px;
+           /* background-color: var(--main-color);*/
+            animation-name: test;
+            animation-duration: 3s;
+            animation-direction: alternate-reverse;
+            animation-iteration-count: infinite;
+        }
+        @keyframes test{
+            from{background-color: rgb(107, 150, 28);}
+            to{background-color: var(--main-color);}
+        }
+        @keyframes change{
+            from{background-color: rgb(201, 201, 24);}
+            to{background-color: rgb(212, 24, 175);}
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box"></div><br>
+        <button>Button1</button><br><br>
+        <button>Button2</button><br><br>
+        <div class="box1"></div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,95 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+header{
+    width: 100%;
+    background-color: #1e2730;
+}
+.header-main{
+    width: 75%;
+    margin: auto;
+    
+    display: flex;
+    justify-content: space-between;
+}
+.python{
+    width: 212px;
+    padding: 20px 0;
+    background: linear-gradient(to bottom, #13191e 40%, rgb(70, 70, 70) 90%);
+    text-align:center;
+    color: white;
+    border-top: 2px solid #2e71a9;
+}
+.python:hover{
+    border: 1px solid black;
+    background: linear-gradient(to bottom, #13191e 40%, rgb(70, 70, 70) 100%);
+}
+.psf{
+    width: 212px;
+    padding: 20px 0;
+    background-color: #1f2a32;
+    text-align: center;
+    color:#999999;
+    border-top: 2px solid grey;
+}
+.psf:hover{
+    color: white;
+    border: 1px solid black;
+    background: linear-gradient(to bottom, #13191e 40%, rgb(70, 70, 70) 100%);
+}
+.docs{
+    width: 211px;
+    padding: 20px 0;
+    background-color: #1f2a32;
+    text-align: center;
+    color:#999999;
+    border-top: 2px solid yellow;
+}
+.docs:hover{
+    color: white;
+    border: 1px solid black;
+    background: linear-gradient(to bottom, #13191e 40%, rgb(70, 70, 70) 100%);
+}
+.py{
+    width: 212px;
+    padding: 20px 0;
+    background-color: #1f2a32;
+    text-align: center;
+    color:#999999;
+    border-top: 2px solid green;
+}
+
+.py:hover{
+    color: white;
+    border: 1px solid black;
+    background: linear-gradient(to bottom, #13191e 40%, rgb(70, 70, 70) 100%);
+}
+.jobs{
+    width: 212px;
+    padding: 20px 0;
+    background-color: #1f2a32;
+    text-align: center;
+    color:#999999;
+    border-top: 2px solid rgba(255, 192, 203, 0.667);
+}
+.jobs:hover{
+    color: white;
+    border: 1px solid black;
+    background: linear-gradient(to bottom, #13191e 40%, rgb(70, 70, 70) 100%);
+}
+.community{
+    width: 212px;
+    padding: 20px 0;
+    background-color: #1f2a32;
+    text-align: center;
+    color:#999999;
+    border-top: 2px solid maroon;
+}
+.community:hover{
+    color: white;
+    border: 1px solid black;
+    background: linear-gradient(to bottom, #13191e 40%, rgb(70, 70, 70) 100%);
+}

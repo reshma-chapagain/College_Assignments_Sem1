@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Form</title>
+    <style>
+        body {
+            background-color: #da84a6;
+            font-family: 'Times New Roman', Times, serif;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            
+            min-height: 100vh;
+            margin: 0;
+            padding: 20px 0;
+        }
+
+        .container {
+            width: 700px;
+           
+            padding: 30px;
+        }
+           
+        h1 {
+            text-align: center;
+            margin-bottom: 30px;
+
+        
+            font-size: 2.5em;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+        }
+
+        .form-group label {
+            width: 200px;
+            font-size: 1.2em;
+            color: #333;
+        }
+
+        .input-group {
+            flex: 1;
+            display: flex;
+            gap: 10px;
+            align-items: center;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="password"],
+        input[type="number"],
+        input[type="date"],
+        select,
+        textarea {
+            width: 100%;
+            height: 35px;
+            padding: 5px 10px;
+            border: 1px solid #999;
+            border-radius: 2px;
+            box-sizing: border-box;
+            background-color: white;
+           
+        }
+
+        textarea {
+            height: 100px;
+            resize: vertical;
+        }
+
+        .name-row input {
+            width: 50%;
+        }
+
+        .dob-row input,
+        .dob-row select {
+            width: 30%;
+        }
+
+        .mobile-row input:first-child {
+            width: 60px;
+        }
+
+        .radio-group,
+        .checkbox-group {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            font-size: 1.1em;
+        }
+
+        input[type="radio"],
+        input[type="checkbox"] {
+            width: 20px;
+            height: 20px;
+            margin: 0 5px 0 0;
+            vertical-align: middle;
+        }
+
+        .btn-container {
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        button {
+            padding: 10px 30px;
+            background: #e0e0e0;
+            border: 1px solid #999;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 1.1em;
+            color: black;
+        }
+
+        button:hover {
+            background-color: #d0d0d0;
+        }
+        .gender
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Student Registration Form</h1>
+
+        <form>
+            <div class="form-group">
+                <label>Roll no. :</label>
+                <div class="input-group">
+                    <input type="text">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label>Student name :</label>
+                <div class="input-group name-row">
+                    <input type="text" placeholder="First Name">
+                    <span>-</span>
+                    <input type="text" placeholder="Last Name">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label>Father's name :</label>
+                <div class="input-group">
+                    <input type="text">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label>Date of birth :</label>
+                <div class="input-group dob-row">
+                    <input type="text" placeholder="Day">
+                    <span>-</span>
+                    <input type="text" placeholder="Month">
+                    <span>-</span>
+                    <input type="text" placeholder="Year">
+                    <span>(DD-MM-YYYY)</span>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label>Mobile no. :</label>
+                <div class="input-group mobile-row">
+                    <input type="text" value="+91">
+                    <span>-</span>
+                    <input type="text">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label>Email id :</label>
+                <div class="input-group">
+                    <input type="email">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label>Password :</label>
+                <div class="input-group">
+                    <input type="password">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label>Gender :</label>
+                <div class="input-group radio-group">
+                    <input type="radio" class="gender" > Male
+                    <input type="radio" class="gender"> Female
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label>Department:</label>
+                <div class="input-group checkbox-group">
+                    <label><input type="checkbox" name="dept" value="cse">CSE</label>
+                    <label><input type="checkbox" name="dept" value="it">IT</label>
+                    <label><input type="checkbox" name="dept" value="ece">BBA</label>
+                    <label><input type="checkbox" name="dept" value="civil">Civil</label>
+                    <label><input type="checkbox" name="dept" value="mech">Mech</label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label>Course :</label>
+                <div class="input-group">
+                    <select>
+                        <option>---------------- Select Current Course's ----------------</option>
+                        <option>BBA</option>
+                        <option>BCSIT</option>
+                        <option>BCA</option>
+                        <option>MCA</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label>Student photo :</label>
+                <div class="input-group">
+                    <input type="file" style="border: none; padding-left: 0;">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label>City :</label>
+                <div class="input-group">
+                    <input type="text">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label>Address :</label>
+                <div class="input-group">
+                    <textarea></textarea>
+                </div>
+            </div>
+
+            <div class="btn-container">
+                <button type="submit">Register</button>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            height: 100vh;
+            display: flex;
+            align-items: center;
+        }
+        .container {
+            width: 80%;
+            height: 400px;
+            background: rgb(24, 97, 181);
+            margin: auto;
+            /*display: flex;
+            justify-content: space-between;*/
+        }
+
+        /* .left-box{
+            width: 45%;
+            height: 200px;
+            background: rgb(10, 10, 10);
+        }
+        .right-box{
+            width: 45%;
+            height: 200px;
+            background: rgb(215, 71, 18);
+           
+        }*/
+        @media (max-width:600px) {
+            .container {
+                background: rgb(40, 181, 22);
+                /*  flex-direction: column;
+            }
+            .left-box , .right-box{
+                width: 100%;
+            }*/
+            }
+        }
+
+        @media (min-width:601px) and (max-width:800px) {
+            .container {
+                background: rgb(75, 22, 181);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Example paragraph</h1>
+        <!-- <div class="left-box"></div>
+        <div class="right-box"></div>-->
+
+
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,83 @@
+<!--<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" method="post">
+    Name=<input type="text" name="username" readonly><br><br>
+    Email= <input type="email" id="email" name="email"disabled><br><br>
+    Password= <input type="password" name="password" name="password" required minlength="8"><br><br>
+ 
+    Number= <input type="tel" id="Number" name="Number"required><br><br>   
+    Gender= <input type="radio" name="gender" value="Male">Male
+    <input type="radio" name="gender" value="Female">Female
+    <input type="radio" name="gender" value="Other">Other<br><br>
+    <input type="date" min="0" max="100" step="5">
+ <br><br>
+
+    Course:
+    <select id="course" name="course">
+        <option> HTML</option>
+        <option>Css</option>
+        <option>Javascript</option>
+        <option> Java</option>
+    </select><br><br>
+     <label for="image">Student Photo</label>
+            <input type="file" multiple> <br><br>
+            <input type="file" accept="pdf"> <br><br>
+    <input type="checkbox" name="subscribe" checked> Suscribe to ABC channel  <br><br>
+        <textarea name="message" rows="4" cols="30" placeholder="Your Message....">
+
+        </textarea><br><br>
+        <input type="submit" value="submit">
+        <input type="reset" value="reset"> 
+    </form>
+</body>
+</html>
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration_Form</title>
+</head>
+<body>
+    <h1 align="center">Sign UP Form</h1>
+    <form>
+        <fieldset>
+            <legend> Basic Details</legend>
+            <label> Firstname:</label>
+            <input type="text" placeholder="Firstname"><br><br>
+            <label>Lastname:</label>
+            <input type="text" placeholder="Lastname"><br><br>
+            <label>Gender</label>
+            <input type="radio" name="gender">Male
+            <input type="radio" name="gender">Female
+            <input type="radio" name="gender">Others<br><br>
+
+        </fieldset>
+        <fieldset>
+            <legend> Contact Details</legend>
+            <label>Contact No:</label>
+            <input type="tel" pattern="[0-9]+" placeholder="Contact Number"><br><br>
+            <label>Email:</label>
+            <input type="email" placeholder="Email"><br><br>
+           
+        </fieldset>
+        <fieldset>
+            <legend> Login Details</legend>
+             <label>Password:</label>
+            <input type="password" required min="8"><br><br>
+            <label>Confirm Password:</label>
+            <input type="password" required><br><br>
+        </fieldset>
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+    </form>
+</body>
+</html>

@@ -1,0 +1,112 @@
+.container{
+    width: 60%;
+    height: 95vh;
+    background-color: rgb(14, 175, 27);
+    margin: auto; 
+    border: 2px solid black;
+
+    
+}
+
+.header{
+    height: 100px;
+    width: 90%;
+    background-color: rgb(27, 167, 143);
+    border: 2px solid rgb(22, 20, 20);
+    margin: auto;
+    margin-top: 20px;
+}
+  .nav{
+    height: 60px;
+    width: 15%;
+    background-color:azure;
+    border: 2px solid black;
+    margin-left: 15px;
+    margin-top: 15px;
+  } 
+    .logo{
+        height: 65px;
+        width: 51%;
+        background-color:rgb(80, 33, 189);
+        border: 2px solid black;
+        margin: auto;
+        margin-top: -65px;
+   
+    }
+    .goo {
+        height: 60px;
+        width: 20%;
+        background-color:rgb(221, 174, 18);
+        border: 2px solid black;
+        float :right;
+       margin-top: -65px;
+         margin-right: 15px;
+    }
+    .gun{
+        height: 300px;
+        width: 50%;
+        background-color:rgb(48, 16, 154);
+        border: 2px solid black;
+        margin-top: 15px;
+        margin-left: 32px;
+    }
+    .footer{
+        height: 100px;
+        width: 35%;
+        background-color:rgb(211, 140, 53);
+        border: 2px solid black;
+        float :right;
+        margin-top: -300px;
+        margin-right: 15px;
+    }
+    .james{
+        height: 100px;
+        width:35%;
+        background-color:blueviolet;
+        border: 2px solid black;
+        float: right;
+        margin-top: -110px;
+        margin-right: 15px;
+    }
+    .box{
+         height: 100px;
+        width: 30%;
+        background-color: black;
+        border: 2px solid rgb(22, 20, 20);
+        margin: auto;
+        margin-top: 20px;
+    }
+    .code{
+        height:100px;
+        width: 25%;
+        background-color: brown;
+        border: 2px solid black;
+        float: left;
+        margin-left: 32px;
+        margin-top: -105px;
+    }
+    .genshin{
+        height: 100px;
+        width: 25%;
+        background-color: coral;
+        border: 2px solid black;
+        float: right;
+        margin-right: 32px;
+        margin-top: -105px;
+    }
+    .anime{
+        height: 100px;
+        width: 90%;
+        background-color:rgb(32, 174, 202);
+        border: 2px soloid black;
+        margin: auto;
+        margin-top: 15px;
+    }
+    .inner-box {
+    width: 150px;
+    height: 50px;
+    background: rgb(161, 47, 47);
+    border: 2px solid black;
+    margin: auto;  
+    margin-top: 5px;
+}

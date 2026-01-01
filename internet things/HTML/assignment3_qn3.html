@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+<header>
+    <h1>Explore Nepal</h1>
+    <p>Discover Nepal through images, audio, and video</p>
+</header>   
+
+<main>
+
+    <section>
+    <h2>Responsive Image</h2>
+
+    <img
+        src="Images/everest.jpg"
+        srcset="
+            Images/everest.jpg 480w,
+            Images/everest.jpg 768w,
+            Images/everest.jpg 1200w
+        "
+        alt="Scenic view of Nepal"
+    >
+
+    <p>The browser automatically selects the best image for the screen size.</p>
+</section>
+
+
+    <section>
+        <h2>Audio Narration</h2>
+        <audio controls>
+            <source src="Audios/nepal_audio.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+    </section>
+
+    <section>
+        <h2>Promotional Video</h2>
+        <video controls width="400" poster="Images/nepal.jpg">
+            <source src="Audios/nepal_promo.mp4" type="video/mp4">
+            Your browser does not support the video element.
+        </video>
+    </section>
+
+</main>
+
+<footer>
+    <p>&copy; 2025 Explore Nepal</p>
+</footer>
+
+</body>
+</html>

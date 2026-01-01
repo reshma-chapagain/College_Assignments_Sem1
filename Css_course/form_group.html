@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            background: rgb(229, 160, 211);
+            align-items: center;
+        }
+        .container {
+            width: 600px;
+            background: white;
+            padding: 20px;
+            
+            border-radius: 5px;
+        }
+        .form-group {
+            margin-bottom: 10px;
+            
+        }
+        input, textarea {
+            width: 100%;
+            padding: 8px;
+            box-sizing: border-box;
+            border: 2px solid beige;
+            height: 40px;
+        }
+        textarea {
+            height: 100px;
+        }
+        button{
+            min-width: 150px;
+            padding: 10px;
+            background: rgb(55, 23, 171);
+            color: wheat;
+            border: none;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text">
+        </div>
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email">
+        </div>
+        <div class="form-group">
+            <label for="subject">Subject:</label>
+            <input type="text">
+        </div>
+        <div class="form-group">
+            <label for="message">Message:</label>
+
+            <textarea></textarea>
+        </div>
+        <div class="form-group">
+            <button>Contact Us</button>
+        </div>
+    </div>
+</body>
+
+</html>

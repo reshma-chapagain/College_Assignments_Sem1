@@ -1,0 +1,104 @@
+<!--
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <input type="email" placeholder="abc@gmail.com"><br><br>
+    <input type="url" placeholder="https://www.example.com"><br><br>
+    <input type="password" placeholder="Enter your password"><br><br>
+    <input type="number" min="1" max="100"><br><br><br>
+    <input type="date"><br><br><br>
+    <input type="time"><br><br>
+    <input type="range" min="0" max="10"><br><br>
+    <input type="color"><br><br>
+    <input type="search"><br><br>
+    <input type="tel" placeholder="9xxxxxxxxx"><br><br>
+    <input type="text" pattern="[A-Za-z]+" placeholder="Only Letters"><br><br>
+    <input type="number" pattern="[0-9]+" placeholder="numbers only"><br><br>
+    <input type="text" value="ABC" readonly placeholder="readonly"><br><br>
+    <input type="text" value="XYZ" disabled placeholder="disabled"><br><br>
+    <input type="text" autofocus placeholder="autofocus"><br><br>
+    <input type="email" autocomplete="on" placeholder="autocomplete"><br><br>
+    <input type="submit" value="Submit Button"><br><br>
+
+    Grouping form elements
+    <form>
+        <fieldset>
+            <legend>Personal Information</legend>
+            <label>Name</label>
+            <input type="text"><br><br>
+            <label>Age</label>
+            <input type="number"><br><br>
+        </fieldset>
+    </form>
+
+
+</body>
+
+</html>
+-->
+<br>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML5 Forms Practical Example</title>
+</head>
+<body>
+
+<h2>Student Registration Form</h2>
+
+<form>
+    <fieldset>
+        <legend>Personal Information</legend>
+        <label>Full Name</label>
+        <input type="text" placeholder="Enter full name"><br>
+        <label>Email Address</label>
+        <input type="email" placeholder="abc@gmail.com"><br>
+        <label>Mobile Number</label>
+        <input type="tel" placeholder="98xxxxxxxx"><br>
+        <label>Date Of Birth</label><br>
+        <input type="date">
+        <br>
+
+    </fieldset><br>
+    <fieldset>
+        <legend>Academic Details</legend><br>
+        <label>College Website</label><br>
+        <input type="url" placeholder="https://college.edu"><br>
+        <label>Current Semester</label><br>
+        <input type="number" min="1" max="8"><br>
+        <label>Preffered Study Time:</label><br>
+        <input type="time"><br>
+        <label>Program Study Level</label><br>
+        <input type="range" min="1" max="10"><br>
+        <small>1-Beginner, 5-Advanced</small><br>
+
+    </fieldset>
+    <br>
+     <fieldset>
+        <legend>System Information</legend><br>
+
+        <label>Country:</label><br>
+        <input type="text" value="Nepal" readonly><br><br>
+
+        <label>Student ID:</label><br>
+        <input type="text" value="Auto Generated" disabled><br><br>
+    </fieldset>
+
+    <br>
+
+    <input type="submit" value="Register">
+</form>
+
+</body>
+</html>

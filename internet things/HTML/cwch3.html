@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Advanced Course Registration</title>
+</head>
+
+<body>
+
+    <header>
+        <h1>Advanced Course Registration</h1>
+        <p>Fall/Spring Semester</p>
+
+        <nav>
+            <ul>
+                <li><a href="#courses">View Course List</a></li>
+                <li><a href="#register">Go to Registration Form</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <section id="courses">
+            <h2>Available Courses</h2>
+
+            <table border="1" cellpadding="10">
+                <thead>
+                    <tr>
+                        <th>Course Code</th>
+                        <th>Course Name</th>
+                        <th>Credit Hours</th>
+                        <th>Instructor Name</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>CS401</td>
+                        <td>Advanced Web Development</td>
+                        <td>4</td>
+                        <td>Dr. Smith</td>
+                    </tr>
+                    <tr>
+                        <td>CS402</td>
+                        <td>Data Structures &amp; Algorithms</td>
+                        <td>3</td>
+                        <td>Prof. Lee</td>
+                    </tr>
+                    <tr>
+                        <td>CS403</td>
+                        <td>Database Management Systems</td>
+                        <td>4</td>
+                        <td>Ms. Johnson</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <hr>
+
+        <section id="register">
+            <h2>Registration Form</h2>
+
+            <form>
+
+                <label for="sid">Student ID:</label>
+                <input type="text" id="sid" name="sid" placeholder="U123456">
+                <br><br>
+
+                <label for="email">Student Email:</label>
+                <input type="email" id="email" name="email">
+                <br><br>
+
+                <p><strong>Select Courses (Check all that apply):</strong></p>
+
+                <input type="checkbox" id="c1" name="course" value="CS401">
+                <label for="c1">CS401 - Advanced Web Development</label><br>
+
+                <input type="checkbox" id="c2" name="course" value="CS402">
+                <label for="c2">CS402 - Data Structures &amp; Algorithms</label><br>
+
+                <input type="checkbox" id="c3" name="course" value="CS403">
+                <label for="c3">CS403 - Database Management Systems</label>
+                <br><br>
+
+                <label for="credit">Desired Credit Hours (12 to 18):</label>
+                <input type="number" id="credit" name="credit" min="12" max="18">
+                <br><br>
+
+                <button type="submit">Submit Registration</button>
+
+            </form>
+        </section>
+
+    </main>
+
+    <hr>
+
+    <footer>
+        <p>2024 University Registration System</p>
+        <p>
+            Contact:
+            <a href="mailto:registrar@university.edu">registrar@university.edu</a>
+        </p>
+    </footer>
+
+</body>
+
+</html>
