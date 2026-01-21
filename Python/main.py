@@ -49,3 +49,7 @@ data4 = ['raaaam' , 'haaarriii']
 data4.append('gopis')
 #print(dir(data4))
 print(data4)
+
+a = input("Enter a number: ")
+print(a)
+
