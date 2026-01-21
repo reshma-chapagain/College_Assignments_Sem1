@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+         let x = 5;
+         console.log(x++);
+         console.log(x);
+         console.log(++x);
+
+         let y = "5", z = 10;
+         y+=5;
+         y-=3;
+         y*=2;
+         console.log(y%3);
+
+         //Equality operators
+         console.log (x == y); 
+            console.log (x === y);
+
+            //inequality operators
+            console.log (x != y);
+            console.log (x !== y);
+
+
+            //Logical Operators
+
+            let a = true;
+            let b = false;
+
+            //AND, OR, NOT
+            console.log (a && b);
+            console.log (a || b);
+            console.log (!a);
+            console.log (!b);
+            console.log (!!a);
+
+
+            //String Operators
+            let firstName = "John";
+            let lastName = "Doe";
+            //concatenation
+            let fullName = firstName + " " + lastName;
+            console.log(fullName);
+            let greeting = "Hello";
+            greeting += " World";
+
+            console.log(greeting);
+            //Template Literals
+            let message = `${firstName} ${lastName}`;
+            console.log(message);
+    </script>
+</body>
+</html>

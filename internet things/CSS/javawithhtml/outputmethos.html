@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1> JavaScript Output methods</h1>
+    <p id="demo"></p>
+    <button onclick="showAll()"> Show all outputs</button>
+    <script>
+        function showAll() {
+            document.getElementById("demo").innerHTML = "Changed by innerHTML";
+
+            alert("This is an alert box");
+
+            console.log("This is a log message");
+            console.warn("This is a warning message");
+            console.error("This is an error message");
+        }
+    </script>
+</body>
+</html>
