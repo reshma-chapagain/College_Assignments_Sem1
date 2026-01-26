@@ -1,4 +1,4 @@
-print("Welcome to ATM 🏦")
+print("Welcome to ATM ")
 print("-" * 25)
 
 balance = 100000
