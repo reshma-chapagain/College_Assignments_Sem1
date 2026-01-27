@@ -22,14 +22,15 @@ while x < len(students):
     if students[x]['status'] == True:
         total_active_user += 1
 
+    else :
+        total_inactive_user +=1
+
         if students[x]['gender'] == 'male':
             total_active_male += 1
         else:
             total_active_female += 1
 
-    else:
-        total_inactive_user += 1
-
+   
         if students[x]['gender'] == 'male':
             total_inactive_male += 1
         else:
