@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let fruits = ["Apple", "Banana", "Orange", "Mango"];
+
+        //remove 2 elements starting at index 1
+        let removed = fruits.splice(1, 2);
+        console.log(removed);
+        console.log(fruits);
+
+        //insert elemebts at index 1
+        fruits.splice(1, 0, "Kiwi", "Grape");
+        console.log(fruits);
+
+
+        //Replace 1 element at index 2
+
+        fruits.splice(2, 1, "Cherry");
+        console.log(fruits);
+    </script>
+</body>
+
+</html>
