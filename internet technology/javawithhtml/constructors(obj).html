@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function Person(firstName, lastName, age) {
+            this.firstName = firstName;
+            this.lastName = lastName;
+            this.age = age;
+            this.fullName = function () {
+                return this.firstName + "" + this.lastName;
+
+            };
+        }
+        //create instances
+        let person1 = new Person("John", "Doe", 30);
+        let person2 = new Person("Jane", "Smith", 25);
+
+
+        console.log(person1.fullName());
+        console.log(person2.fullName());
+
+    </script>
+</body>
+
+</html>
