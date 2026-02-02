@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display: flex;
+            gap: 20px;
+            background-color: lightgray;
+            /*justify-content: center;*/
+            align-items: center;
+            height: 20%;
+            /*flex-wrap: wrap;*/
+            /*flex-direction: row-reverse;*/
+            flex-direction: column-reverse;
+            flex-wrap: wrap;
+        }
+
+        .box{
+            background: lightblue;
+            padding: 20px;
+            flex: 1;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">Home</div>
+        <div class="box">About</div>
+        <div class="box">Contact</div>
+    </div>
+</body>
+</html>

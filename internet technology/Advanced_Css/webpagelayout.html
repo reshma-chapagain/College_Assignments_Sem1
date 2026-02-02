@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    header {
+        text-align: center;
+        background-color: lightblue;
+        padding: 15px;
+    }
+
+    nav {
+        text-align: center;
+        background-color: rgb(55, 104, 88);
+        padding: 15px;
+    }
+       main{
+            width: 100%;
+            margin: auto;
+        }
+        aside,section{
+            float: left;
+            height: 200px;
+            background-color: #ffe6b3;
+            text-align: center;
+            padding-top: 80px;
+            border: 1px solid black;
+            box-sizing: border-box;
+        }
+
+         aside {
+            flex: 1;
+            width: 30%;
+         }
+         section {
+            width: 40%;
+         }
+
+         footer {
+            background-color: lightblue;
+            text-align: center;
+            padding: 15px;
+         }
+</style>
+
+<body>
+    <header>Header</header>
+    <nav>Navigation</nav>
+    <main>
+        <aside>Sidebar 1</aside>
+       <section>Main Content</section>
+        <aside>Sidebar 2</aside>
+    </main>
+
+    <footer>Footer</footer>
+</body>
+</html>
