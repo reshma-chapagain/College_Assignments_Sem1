@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         .grid-layout {
+            display: grid;
+            grid-template-columns: 200px 1fr 200px;
+            grid-template-rows: 100px 1fr 60px;
+            grid-template-areas:
+                "header header header"
+                "sidebar content ads"
+                "footer footer footer";
+            gap: 10px;
+            height: 600px;
+            background-color: #ddd;
+            padding: 10px;
+        }
+
+        .header {
+            grid-area: header;
+            background-color: #2196F3;
+            color: white;
+            
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+           
+        }
+
+        .sidebar {
+            grid-area: sidebar;
+            background-color: pink;
+            color: white;
+            padding: 20px;
+           
+        }
+
+        .content {
+            grid-area: content;
+            background-color: yellow;
+            padding: 20px;
+            border-radius: 5px;
+        }
+        .ads {
+            grid-area: ads;
+            background-color: beige;
+            padding: 20px;
+            border-radius: 5px;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class = "grid.layout">
+        <div class="header">Header</div>
+        <div class = "sidebar">
+            <h3> Sidebar</h3>
+            <ul>
+                <li> Nav Item 1</li>
+                <li> Nav Item 2</li>
+                <li>New Itel 3</li>
+                <li>New Item 4</li>
+            </ul>
+    </div>
+    <div class="content">
+        <h2>Main COntent Area</h2>
+        <p> This is the main content area of the page. Grid template area make it very easy to</p>
+        <p>This layout is defined visually in the Css, making it easy to understand and modify.</p>
+    </div>
+    <div class="ads">
+        <h3>Ads</h3>
+        <p>Advertisement Space</p>
+    </div>
+</body>
+</html>

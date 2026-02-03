@@ -1,0 +1,50 @@
+/* General Layout */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.container {
+    background: white;
+    padding: 30px;
+    width: 100%;
+    max-width: 500px; /* Responsive limit [3] */
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2); /* Shadow effect [11] */
+    border-radius: 8px;
+}
+
+input, select, button {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    box-sizing: border-box; /* Box model management [12] */
+}
+
+/* Button Hover Effect [9] */
+button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Confirmation Message Transition */
+#confirmationMessage {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #d4edda;
+    border: 1px solid #c3e6cb;
+    transition: opacity 0.5s ease-in-out; /* Transition effect */
+}
+
+.hidden {
+    display: none;
+    opacity: 0;
+}
