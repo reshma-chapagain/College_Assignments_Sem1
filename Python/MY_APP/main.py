@@ -14,11 +14,11 @@ def about():
 def contact(): 
     return render_template("contact.html")
 
-@app.route('/News')
+@app.route('/news')
 def news(): 
     return render_template("news.html")
 
-@app.route('/Images')
+@app.route('/images')
 def images(): 
     return render_template("image.html")
 

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box-with-transition {
+            width: 150px;
+            height: 150px;
+            background-color: blue;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+        .box-with-transition :hover{
+            background-color: black;
+        }
+    </style>
+</head>
+<body>
+    <h1> With transition</h1>
+    <div class="box-with-transition">
+        <p><strong> Hover to trigger</strong></p>
+        <div class="info"></div>
+        
+    </div>
+</body>
+</html>
