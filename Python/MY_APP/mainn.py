@@ -1,14 +1,22 @@
 import sqlite3
 
-con = sqlite3.connect('college.sqlite3')
-mycur = con.cursor()
+conn = sqlite3.connect('college.sqlite3')
 
-mycur.execute("""
-    CREATE TABLE IF NOT EXISTS colleges(
+mycur = conn.cursor()
+
+def create_table():
+    mycur.execute("""
+    CREATE TABLE IF NOT EXISTS students(
         id INTEGER PRIMARY KEY AUTOINCREMENT,
-        name TEXT
+        name TEXT NOT NULL,
+        email TEXT NOT NULL,
+        address TEXT
     )
 """)
+    conn.commit()
+    print("Table created successfully.")
+    
+create_table()
 
-con.commit()
-con.close()
+conn.commit()
+conn.close()
