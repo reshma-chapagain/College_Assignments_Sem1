@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multiplication Table</title>
+    <style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4; 
+        text-align: center; 
+    }
+
+    .container {
+        width: 300px;
+        margin: 50px auto; 
+        padding: 20px; 
+        background-color: white;
+        border: 2px solid #333; 
+        
+    }
+
+    
+    button:hover {
+        background-color: #0056b3;
+    }
+
+    .result-area {
+        margin-top: 20px;
+        line-height: 1.6; 
+        text-align: left;
+        padding-left: 50px;
+    }
+</style>
+</head>
+<body>
+    <main class="container">
+        <h1>Multiplication Table</h1>
+        <p>Enter a number:</p>
+        
+        
+        <input type="number" id="userInput" placeholder="Enter a number">
+        
+        
+        <button onclick="generateTable()">Generate Table</button>
+
+        
+        <div id="tableOutput" class="result-area"></div>
+    </main>
+
+<script>
+    function generateTable() {
+        let num = document.getElementById("userInput").value;
+        let outputDiv = document.getElementById("tableOutput");
+        
+      
+        num = Number(num);
+
+      
+        if (!num) {
+            outputDiv.innerHTML = "<p style='color:red;'>Please enter a valid number.</p>";
+            return;
+        }
+
+        let tableContent = "<h3>Table of " + num + "</h3>";
+
+        for (let i = 1; i <= 10; i++) {
+          
+            tableContent += num + " x " + i + " = " + (num * i) + "<br>";
+        }
+
+       
+        outputDiv.innerHTML = tableContent;
+    }
+</script>
+</body>
+</html>
