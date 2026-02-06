@@ -1,23 +1,35 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Students</title>
 </head>
 <body>
-    <blockquote>
-        <h1>Crud</h1>
-        <hr>
-        <form action="" method="post">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
-            <br><br>
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-            <br><br>
-            <input type="submit" value="Submit">
-        </form>
-    </blockquote>
+    <h1>Student List</h1>
+
+    <a href="/add-record">Add Student</a>
+    <br><br>
+
+    <table border="1">
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Address</th>
+            <th>Action</th>
+        </tr>
+
+        {% for s in students %}
+        <tr>
+            <td>{{ s[0] }}</td>
+            <td>{{ s[1] }}</td>
+            <td>{{ s[2] }}</td>
+            <td>{{ s[3] }}</td>
+            <td>
+                <a href="/edit/{{ s[0] }}">Edit</a>
+                <a href="/delete/{{ s[0] }}">Delete</a>
+            </td>
+        </tr>
+        {% endfor %}
+    </table>
 </body>
 </html>
