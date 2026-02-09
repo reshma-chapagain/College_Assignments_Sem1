@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+        function myFunc() {
+            var a = 100;
+            try {
+            JSON.parse("Invalid");
+        } 
+        catch(e) {
+            alert("Error:" + e.message);
+            console.log(e);
+        }
+        finally {
+            console.log("Processing complete");
+        }
+    }
+        </script>
+</head>
+<body>
+    <p>Click the following to see the result:</p>
+    <form>
+        <input type="button" value="click me" onclick="myFunc();"/>
+    </form>
+</body>
+</html>
