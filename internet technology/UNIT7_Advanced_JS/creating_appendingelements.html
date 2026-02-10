@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <div id = "container">
+    <button onclick="addparagraph()">Add paragraph</button>
+    <script>
+        function addParagraph(){
+            var newPara = document.createElement("p");
+            
+            newPara.textContent = "This paragraph was created using JavaScript";
+
+            var container = document.getElementById("container");
+            container.appendChild(newPara);
+        }
+    </script>
+   </div> 
+</body>
+</html>

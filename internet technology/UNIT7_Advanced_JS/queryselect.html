@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="box"> This is a div with id box</div>
+    <button onclick="selectById()">Select By Id</button>
+
+    <script>
+        function selectById() {
+            var element = document.querySelector("#box");
+            element.style.backgroundColor = "Yellow";
+            element.textContent = "Selected by #box";
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+        <p class= "fruit">Apple</p>
+        <p class= "fruit">Banana</p>
+        <p class= "fruit">Cherry</p> 
+        <p class= "vegetable">Carrot</p>
+        <p class= "vegetable">Broccoli</p>
+
+        <button onclick="highlightFruits()">Highlight Fruits</button>
+        <script>
+            function highlightFruits() {
+                var fruits = document.getElementsByClassName("fruit");
+                console.log(fruits);
+                for (var i = 0; i < fruits.length; i++) {
+                    fruits[i].style.backgroundColor = "pink";
+                }
+            }
+    </script>
+</body>
+</html>

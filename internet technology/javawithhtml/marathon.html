@@ -1,38 +1,68 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Marathon Registration</title>
-    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <h1>Marathon Registration</h1>
-        <form id="regForm">
-            <label for="name">Name:</label>
-            <input type="text" id="name" required>
 
-            <label for="email">Email:</label>
-            <input type="email" id="email" required>
+<h3>Marathon Registration</h3>
 
-            <label for="age">Age:</label>
-            <input type="number" id="age" required>
+<form onsubmit="return registerUser()">
+    Name:
+    <input type="text" id="name"><br><br>
 
-            <label for="category">Race Category:</label>
-            <select id="category">
-                <option value="5K">5K</option>
-                <option value="10K">10K</option>
-                <option value="Half Marathon">Half Marathon</option>
-            </select>
+    Email:
+    <input type="text" id="email"><br><br>
 
-            <button type="button" onclick="handleRegistration()">Register</button>
-            <button type="button" onclick="showHelp()">Get Help</button>
-        </form>
+    Age:
+    <input type="number" id="age"><br><br>
 
-       
-        <div id="confirmation"></div>
-    </div>
-    <script src="script.js"></script>
+    Race Category:
+    <select id="race">
+        <option>5K</option>
+        <option>10K</option>
+        <option>Half Marathon</option>
+    </select>
+    <br><br>
+
+    <button type="submit">Register</button>
+</form>
+
+<br>
+<button onclick="getHelp()">Get Help</button>
+
+<p id="message"></p>
+
+<script>
+function registerUser() {
+    var age = document.getElementById("age").value;
+    var race = document.getElementById("race").value;
+
+    if (age < 18) {
+        alert("You must be 18 or older to participate.");
+        return false;
+    }
+
+    var msg = "";
+
+    if (race == "5K") {
+        msg = "Welcome to the 5K Marathon! Get ready to sprint!";
+    }
+    else if (race == "10K") {
+        msg = "Welcome to the 10K Marathon! Pace yourself and enjoy the run!";
+    }
+    else {
+        msg = "Welcome to the Half Marathon! Prepare for an incredible challenge!";
+    }
+
+    document.getElementById("message").innerHTML = msg;
+    return false;
+}
+
+function getHelp() {
+    alert("Please call +977: 9812345678 for more details.");
+}
+</script>
+
 </body>
 </html>
