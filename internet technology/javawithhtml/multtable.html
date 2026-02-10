@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Multiplication Table</title>
+    <style>
+        table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+
+<h3>Multiplication Table</h3>
+
+Enter a number:
+<input type="text" id="num">
+<button onclick="showTable()">Show Table</button>
+
+<br><br>
+
+<div id="output"></div>
+
+<script>
+function showTable() {
+    var n = document.getElementById("num").value;
+    n = Number(n);
+
+    var text = "<table>";
+
+    for (var i = 1; i <= 10; i++) {
+        text += "<tr>";
+        text += "<td>" + n + " x " + i + "</td>";
+        text += "<td>=</td>";
+        text += "<td>" + (n*i) + "</td>";
+        text += "</tr>";
+    }
+
+    text += "</table>";
+
+    document.getElementById("output").innerHTML = text;
+}
+</script>
+
+</body>
+</html>

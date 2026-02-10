@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Object</title>
+</head>
+<body>
+
+<h3>Student Object Example</h3>
+
+<button onclick="showStudent()">Show Student Info</button>
+
+<p id="output"></p>
+
+<script>
+
+var student = {
+    name: "Reshma",
+    rollNumber: 101,
+    marks: [85, 78, 92, 66, 74],
+
+   
+    totalMarks: function() {
+        var total = 0;
+        for (var i = 0; i < this.marks.length; i++) {
+            total += this.marks[i];
+        }
+        return total;
+    },
+
+
+    averageMarks: function() {
+        return this.totalMarks() / this.marks.length;
+    },
+
+    
+    displayInfo: function() {
+        var info = "Name: " + this.name + "<br>";
+        info += "Roll Number: " + this.rollNumber + "<br>";
+        info += "Marks: " + this.marks.join(", ") + "<br>";
+        info += "Total Marks: " + this.totalMarks() + "<br>";
+        info += "Average Marks: " + this.averageMarks().toFixed(2);
+        return info;
+    }
+};
+
+function showStudent() {
+    document.getElementById("output").innerHTML = student.displayInfo();
+}
+</script>
+
+</body>
+</html>

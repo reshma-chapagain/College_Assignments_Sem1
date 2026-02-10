@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Reverse Number/String</title>
+</head>
+<body>
+
+<h3>Reverse Number or String</h3>
+
+Enter value:
+<input type="text" id="inputValue">
+<button onclick="reverseValue()">Reverse</button>
+
+<p id="result"></p>
+
+<script>
+function reverseValue() {
+    var val = document.getElementById("inputValue").value;
+    
+    
+    var str = val.toString();
+
+    var reversed = str.split("").reverse().join("");
+
+    document.getElementById("result").innerHTML = "Reversed: " + reversed;
+}
+</script>
+
+</body>
+</html>

@@ -14,7 +14,7 @@ cur = cnx.cursor()
 cur.execute("SELECT * FROM books")
 books_data = cur.fetchall()
 
-print("\n📚 Books in database:")
+print("\n Books in database:")
 if books_data:
     for book in books_data:
         print(book)

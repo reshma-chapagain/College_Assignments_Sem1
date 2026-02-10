@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Even Numbers in Array</title>
+</head>
+<body>
+
+<h3>Find Even Numbers in Array</h3>
+
+<button onclick="findEvenNumbers()">Show Even Numbers</button>
+
+<p id="original"></p>
+<p id="even"></p>
+
+<script>
+function findEvenNumbers() {
+    var arr = [12, 7, 18, 23, 30, 45, 56];
+    var evenArr = [];
+
+    for (var i = 0; i < arr.length; i++) {
+        if (arr[i] % 2 === 0) {
+            evenArr.push(arr[i]);
+        }
+    }
+
+    document.getElementById("original").innerHTML = "Original Array: [" + arr + "]";
+    document.getElementById("even").innerHTML = "Even Numbers: [" + evenArr + "]";
+}
+</script>
+
+</body>
+</html>

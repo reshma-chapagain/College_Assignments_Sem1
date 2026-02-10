@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Grade Calculator</title>
+</head>
+<body>
+
+<h3>Student Grade Calculator</h3>
+
+Enter Marks:
+<input type="text" id="marks">
+<br><br>
+
+<button onclick="gradeIf()">Check Grade</button>
+
+<p id="result"></p>
+
+<script>
+function gradeIf() {
+    var m = document.getElementById("marks").value;
+    m = Number(m);
+
+    if (m >= 90 && m <= 100)
+        document.getElementById("result").innerHTML = "A+ (Outstanding)";
+    else if (m >= 80)
+        document.getElementById("result").innerHTML = "A (Excellent)";
+    else if (m >= 70)
+        document.getElementById("result").innerHTML = "B+ (Very Good)";
+    else if (m >= 60)
+        document.getElementById("result").innerHTML = "B (Good)";
+    else if (m >= 50)
+        document.getElementById("result").innerHTML = "C (Average)";
+    else if (m >= 40)
+        document.getElementById("result").innerHTML = "D (Below Average)";
+    else
+        document.getElementById("result").innerHTML = "F (Fail)";
+}
+</script>
+
+</body>
+</html>
