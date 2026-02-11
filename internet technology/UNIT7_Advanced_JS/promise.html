@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="output"></p>
+    <button onclick="startOrder()">Order Food(Success)</button>
+
+    <script>
+        var output = document.getElementById("output");
+
+        function placeOrder() {
+            return new Promise(function(resolve, reject) {
+                var orderSuccessful = true; 
+                if(orderSuccessful) {
+                    resolve("Order placed successfully!");
+                } else {
+                    reject("Order failed. Please try again.");
+                }
+            });
+        }
+
+        function startOrder() {
+            placeOrder()
+            .then(function(successMessage) {
+                output.innerHTML = successMessage;
+            })
+            .catch(function(errorMessage) {
+                output.innerHTML = errorMessage;
+            });
+        }
+    </script>
+</body>
+</html>
