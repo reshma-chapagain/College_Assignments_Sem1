@@ -1,0 +1,37 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pinterest Login</title>
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+</head>
+<body>
+
+<div class="login-container">
+    <div class="login-left">
+        <div class="login-box">
+            <h2>Pinterest</h2>
+            <p>Welcome back</p>
+            <form method="post">
+                {% csrf_token %}
+                <input type="text" name="username" placeholder="Username" required>
+                <input type="password" name="password" placeholder="Password" required>
+                <button type="submit">Log in</button>
+            </form>
+        </div>
+    </div>
+    
+    <div class="login-right">
+        <div class="image-grid">
+            <img src="/static/images/pic12.jpeg" alt="Pinterest image">
+            <img src="/static/images/pic13.jpeg" alt="Pinterest image">
+            <img src="/static/images/pic14.jpeg" alt="Pinterest image">
+            <img src="/static/images/pic15.jpeg" alt="Pinterest image">
+            <img src="/static/images/pic16.jpeg" alt="Pinterest image">
+            <img src="/static/images/pic17.jpeg" alt="Pinterest image">
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

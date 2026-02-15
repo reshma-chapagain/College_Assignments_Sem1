@@ -1,0 +1,72 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pinterest - Home</title>
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+</head>
+<body>
+
+
+<div class="sidebar">
+    <div class="logo">
+        <h2>Pinterest</h2>
+    </div>
+    <nav>
+        <a href="/home/" class="active">Home</a>
+        <a href="/notifications/">Notifications</a>
+        <a href="/messages/">Messages</a>
+        <a href="/profile/">Profile</a>
+        <a href="/logout/" class="logout">Logout</a>
+    </nav>
+</div>
+
+
+<div class="main-content">
+    <div class="header">
+        <h1>Welcome back, {{ request.user.username }}!</h1>
+    </div>
+
+    
+    <div class="pinterest-grid">
+        <div class="pin">
+            <img src="/static/images/pic1.jpeg" alt="Pin 1">
+        </div>
+        <div class="pin">
+            <img src="/static/images/pic2.jpeg" alt="Pin 2">
+        </div>
+        <div class="pin">
+            <img src="/static/images/pic3.jpeg" alt="Pin 3">
+        </div>
+        <div class="pin">
+            <img src="/static/images/pic4.jpeg" alt="Pin 4">
+        </div>
+        <div class="pin">
+            <img src="/static/images/pic5.jpeg" alt="Pin 5">
+        </div>
+        <div class="pin">
+            <img src="/static/images/pic6.jpeg" alt="Pin 6">
+        </div>
+        <div class="pin">
+            <img src="/static/images/pic7.jpeg" alt="Pin 7">
+        </div>
+        <div class="pin">
+            <img src="/static/images/pic8.jpeg" alt="Pin 8">
+        </div>
+        <div class="pin">
+            <img src="/static/images/pic9.jpeg" alt="Pin 9">
+        </div>
+        <div class="pin">
+            <img src="/static/images/pic10.jpeg" alt="Pin 10">
+        </div>
+        <div class="pin">
+            <img src="/static/images/pic11.jpeg" alt="Pin 11">
+        </div>
+        <div class="pin">
+            <img src="/static/images/pic12.jpeg" alt="Pin 12">
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

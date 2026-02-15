@@ -1,0 +1,37 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pinterest - Profile</title>
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+</head>
+<body>
+
+
+<div class="sidebar">
+    <div class="logo">
+        <h2>Pinterest</h2>
+    </div>
+    <nav>
+        <a href="/home/">Home</a>
+        <a href="/notifications/">Notifications</a>
+        <a href="/messages/">Messages</a>
+        <a href="/profile/" class="active">Profile</a>
+        <a href="/logout/" class="logout">Logout</a>
+    </nav>
+</div>
+
+
+<div class="main-content">
+    <div class="header">
+        <h1>My Profile</h1>
+    </div>
+
+    <div class="simple-content">
+        <p>{{ request.user.username }}</p>
+        <p>{{ request.user.email }}</p>
+    </div>
+</div>
+
+</body>
+</html>

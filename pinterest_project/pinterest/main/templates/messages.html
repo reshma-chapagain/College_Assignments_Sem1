@@ -1,0 +1,36 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pinterest - Messages</title>
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+</head>
+<body>
+
+
+<div class="sidebar">
+    <div class="logo">
+        <h2>Pinterest</h2>
+    </div>
+    <nav>
+        <a href="/home/">Home</a>
+        <a href="/notifications/">Notifications</a>
+        <a href="/messages/" class="active">Messages</a>
+        <a href="/profile/">Profile</a>
+        <a href="/logout/" class="logout">Logout</a>
+    </nav>
+</div>
+
+
+<div class="main-content">
+    <div class="header">
+        <h1>Messages</h1>
+    </div>
+
+    <div class="simple-content">
+        <p>No messages yet</p>
+    </div>
+</div>
+
+</body>
+</html>

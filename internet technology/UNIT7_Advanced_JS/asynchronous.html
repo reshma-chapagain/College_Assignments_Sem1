@@ -7,6 +7,19 @@
 </head>
 <body>
     <script>
+        function wait(issuccess) {
+            return new Promise(function (resolve, reject) {
+                    setTimeout(function() {
+                if(issuccess) {
+
+                    resolve("Success");
+                }
+                else {
+                    reject("Failed");
+                }
+                }, 2000);
+            });
+        }
         console.log("first task");
        setTimeout(function() {
             console.log("second task");

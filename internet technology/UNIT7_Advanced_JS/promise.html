@@ -2,35 +2,66 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>JavaScript Promise Example</title>
 </head>
 <body>
+    
+
+    <button onclick="startOrder()">Order Food (Success)</button>
+    <button onclick="failOrder()">Order Food (Fail)</button>
     <p id="output"></p>
-    <button onclick="startOrder()">Order Food(Success)</button>
 
     <script>
         var output = document.getElementById("output");
 
-        function placeOrder() {
-            return new Promise(function(resolve, reject) {
-                var orderSuccessful = true; 
-                if(orderSuccessful) {
-                    resolve("Order placed successfully!");
-                } else {
-                    reject("Order failed. Please try again.");
-                }
+        // Function that returns a Promise
+        function orderFood(food, shouldFail) {
+            return new Promise(function (resolve, reject) {
+                output.innerHTML += "Ordering " + food + "...<br>";
+
+                setTimeout(function () {
+                    if (shouldFail) {
+                        reject("Sorry, " + food + " is not available!");
+                    } else {
+                        resolve(food + " is ready!");
+                    }
+                }, 2000);
             });
         }
 
+        // Using .then() and .catch()
         function startOrder() {
-            placeOrder()
-            .then(function(successMessage) {
-                output.innerHTML = successMessage;
-            })
-            .catch(function(errorMessage) {
-                output.innerHTML = errorMessage;
-            });
+            output.innerHTML = "";
+            output.innerHTML += "--- Placing Order ---<br>";
+
+            orderFood("Momo", false)
+                .then(function (message) {
+                    output.innerHTML += message + "<br>";
+                   
+                })
+                .then(function (message) {
+                    output.innerHTML += message + "<br>";
+                    output.innerHTML += "--- All Done! ---<br>";
+                })
+                .catch(function (error) {
+                    output.innerHTML += "Error: " + error + "<br>";
+                });
+
+            output.innerHTML += "Waiting... (this runs first!)<br>";
+        }
+
+       
+        function failOrder() {
+            output.innerHTML = "";
+            output.innerHTML += "--- Placing Order ---<br>";
+
+            orderFood("Pizza", true)
+                .then(function (message) {
+                    output.innerHTML += message + "<br>"; 
+                })
+                .catch(function (error) {
+                    output.innerHTML += "Error: " + error + "<br>";
+                });
         }
     </script>
 </body>

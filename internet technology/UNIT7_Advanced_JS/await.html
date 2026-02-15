@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript Promise Example</title>
+</head>
+<body>
+    
+    <p id="output"></p>
+    <button onclick="startOrder()">Order Food (Success)</button>
+    
+
+    <script>
+        var output = document.getElementById("output");
+
+        function orderFood(food, shouldFail) {
+            return new Promise(function (resolve, reject) {
+                output.innerHTML += "Ordering " + food + "...<br>";
+
+                setTimeout(function () {
+                    if (shouldFail) {
+                        reject("Sorry, " + food + " is not available!");
+                    } else {
+                        resolve(food + " is ready!");
+                    }
+                }, 2000);
+            });
+        }
+ async function startOrder() {
+        output.innerHTML = "";
+        output.innerHTML += "---Placing Order---<br>";
+
+        try {
+
+        
+    resolves 
+        var food1 = await orderFood("Momo", false);
+        output.innerHTML +=food1 + "is ready<br>";
+
+        var food2 = await orderFood("Tea", false);
+        output.innerHTML +=food2 + "is ready<br>";
+        } catch(error) {}
+        output.innerHTML += "---All Done!---<br>";
+ }
+
+</script>
+</body>
+</html>
