@@ -10,7 +10,7 @@ int main(){
         }else if(c==-1){
             printf("%s is greater",name2);
         }else{
-            printf("%s and %s are same", name1, name2);
+            printf("%s and %s are same", name1,name2);
         }
     return 0;
 }
