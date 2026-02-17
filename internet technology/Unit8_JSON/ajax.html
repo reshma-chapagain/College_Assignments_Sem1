@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick = "fetchPost()">Fetch Post</button>
+    <p id = "output"></p>
+    <script>
+
+        var output = document.getElementById("output");
+
+        function fetchPost() {
+            const xhr = new XMLHttpRequest();
+            xhr.open("GET", "https://jsonplaceholder.typicode.com/posts/1", true);
+            xhr.onload = function() {
+
+                if(xhr.status === 200) {
+                    var post = JSON.parse(xhr.responseText);
+
+                    output.innerHTML += "Status:" + xhr.status + "OK<br><br>";
+                    output.innerHTML += "___Post Details___<br>";
+                    output.innerHTML += "Title: " + post.title + "<br>";
+                    output.innerHTML += "Body: " + post.body + "<br>"; 
+                }
+                    else {
+                        output.innerHTML += "Error! Status:" + xhr.status + "<br>";
+                    }
+                };
+
+                xhr.oneerror = function() {
+                    output.innerHTML += "Network Error occurres. <br>";
+                };
+                    xhr.send();
+
+        }
+    </script>
+</body>
+</html>
