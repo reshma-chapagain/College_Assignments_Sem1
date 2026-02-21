@@ -1,0 +1,1254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Summary of English (Technical Communication)  
+   Complete Notes</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'Segoe UI', Arial, sans-serif; font-size: 14px; color: #1a1a2e; background: #f4f6fb; }
+
+  .cover {
+    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+    color: white; text-align: center; padding: 80px 40px;
+    min-height: 220px; display: flex; flex-direction: column;
+    align-items: center; justify-content: center;
+  }
+  .cover h1 { font-size: 32px; font-weight: 800; letter-spacing: 1px; margin-bottom: 10px; }
+  .cover h2 { font-size: 18px; font-weight: 400; opacity: 0.8; margin-bottom: 6px; }
+  .cover p { font-size: 13px; opacity: 0.6; margin-top: 16px; }
+
+  .toc { background: #fff; max-width: 900px; margin: 30px auto; padding: 30px 40px; border-radius: 12px; box-shadow: 0 2px 12px rgba(0,0,0,0.08); }
+  .toc h2 { font-size: 18px; color: #0f3460; border-bottom: 3px solid #e94560; padding-bottom: 8px; margin-bottom: 16px; }
+  .toc ol { padding-left: 20px; line-height: 2; }
+  .toc li { color: #333; font-size: 14px; }
+  .toc a { color: #0f3460; text-decoration: none; }
+  .toc a:hover { color: #e94560; }
+
+  .wrapper { max-width: 900px; margin: 0 auto 40px auto; padding: 0 20px; }
+
+  .unit {
+    background: #fff; border-radius: 12px; margin-bottom: 32px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.07); overflow: hidden;
+  }
+  .unit-header {
+    background: linear-gradient(135deg, #0f3460, #16213e);
+    color: white; padding: 22px 30px;
+  }
+  .unit-header .unit-label { font-size: 11px; letter-spacing: 3px; text-transform: uppercase; opacity: 0.7; margin-bottom: 4px; }
+  .unit-header h2 { font-size: 22px; font-weight: 700; }
+
+  .unit-body { padding: 28px 30px; }
+
+  .section { margin-bottom: 28px; }
+  .section h3 {
+    font-size: 16px; font-weight: 700; color: #0f3460;
+    border-left: 4px solid #e94560; padding-left: 12px;
+    margin-bottom: 14px;
+  }
+  .section h4 {
+    font-size: 14px; font-weight: 700; color: #16213e;
+    margin: 14px 0 6px 0; text-decoration: underline;
+  }
+  p { margin-bottom: 10px; line-height: 1.7; color: #333; }
+
+  .defbox {
+    background: #eef4ff; border-left: 4px solid #0f3460;
+    border-radius: 0 8px 8px 0; padding: 12px 16px; margin: 12px 0;
+  }
+  .defbox strong { color: #0f3460; }
+
+  .tipbox {
+    background: #fff8e1; border-left: 4px solid #f59e0b;
+    border-radius: 0 8px 8px 0; padding: 12px 16px; margin: 12px 0;
+  }
+  .tipbox strong { color: #b45309; }
+
+  .rulebox {
+    background: #f0fdf4; border-left: 4px solid #22c55e;
+    border-radius: 0 8px 8px 0; padding: 12px 16px; margin: 8px 0;
+  }
+
+  .exbox {
+    background: #fdf2f8; border-left: 4px solid #a855f7;
+    border-radius: 0 8px 8px 0; padding: 10px 16px; margin: 6px 0;
+    font-style: italic; color: #555;
+  }
+
+  table { width: 100%; border-collapse: collapse; margin: 14px 0; font-size: 13px; }
+  th { background: #0f3460; color: white; padding: 10px 12px; text-align: left; }
+  td { padding: 9px 12px; border-bottom: 1px solid #e5e7eb; }
+  tr:nth-child(even) td { background: #f9fafb; }
+  tr:hover td { background: #eef4ff; }
+
+  .grid2 { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin: 14px 0; }
+  .card {
+    background: #f8faff; border: 1px solid #dbe4ff; border-radius: 8px; padding: 14px;
+  }
+  .card h5 { font-size: 13px; font-weight: 700; color: #0f3460; margin-bottom: 6px; }
+  .card p { font-size: 13px; margin: 0; }
+
+  ul { padding-left: 20px; margin: 8px 0; }
+  li { margin-bottom: 5px; line-height: 1.6; }
+
+  .formula {
+    background: #1e293b; color: #7dd3fc; font-family: monospace;
+    padding: 10px 16px; border-radius: 6px; margin: 10px 0; font-size: 13px;
+  }
+
+  .highlight { background: #fef9c3; padding: 2px 6px; border-radius: 3px; font-weight: 600; }
+  .red { color: #e94560; font-weight: 700; }
+  .green { color: #16a34a; font-weight: 700; }
+
+  .divider { border: none; border-top: 2px dashed #e5e7eb; margin: 22px 0; }
+
+  @media print {
+    body { background: white; }
+    .unit { box-shadow: none; border: 1px solid #ccc; page-break-inside: avoid; }
+    .cover { -webkit-print-color-adjust: exact; }
+  }
+</style>
+</head>
+<body>
+
+<!-- COVER -->
+<div class="cover">
+  <div class="unit-label" style="font-size:12px;letter-spacing:4px;margin-bottom:8px;">POKHARA UNIVERSITY · BCSIT</div>
+  <h1>Summary of English</h1>
+  <h2>Technical Communication  
+     Complete Study Notes</h2>
+  <p>Covers: Grammar · Writing Skills · Professional Documents · Citation · Group Discussion</p>
+</div>
+
+<!-- TABLE OF CONTENTS -->
+<div class="toc">
+  <h2>📋 Table of Contents</h2>
+  <ol>
+    <li><a href="#unit1">Subject-Verb Agreement  
+       36 Rules</a></li>
+    <li><a href="#unit2">Active Voice & Passive Voice</a></li>
+    <li><a href="#unit3">Sequence of Tense / Mixed Use of Tense</a></li>
+    <li><a href="#unit4">Note Making & Summary Writing</a></li>
+    <li><a href="#unit5">Memo Writing</a></li>
+    <li><a href="#unit6">Formal Technical Report Writing</a></li>
+    <li><a href="#unit7">Group Discussion (GD)</a></li>
+    <li><a href="#unit8">In-text Citation  
+       APA & MLA</a></li>
+    <li><a href="#unit9">Email Writing (Electronic Mail)</a></li>
+    <li><a href="#unit10">Job Application Letter & CV / Résumé</a></li>
+    <li><a href="#unit11">Oral Presentation</a></li>
+    <li><a href="#unit12">Report / Proposal Formatting Guidelines</a></li>
+  </ol>
+</div>
+
+<div class="wrapper">
+
+<!-- ═══════════════════════════════════════════════════════ -->
+<!-- UNIT 1: SUBJECT VERB AGREEMENT -->
+<!-- ═══════════════════════════════════════════════════════ -->
+<div class="unit" id="unit1">
+  <div class="unit-header">
+    <div class="unit-label">Chapter 1 · Grammar</div>
+    <h2>Subject-Verb Agreement</h2>
+  </div>
+  <div class="unit-body">
+    <div class="defbox">
+      <strong>Definition:</strong> The subject and verb in a sentence must agree in number (singular/plural) and person. A singular subject takes a singular verb; a plural subject takes a plural verb.
+    </div>
+
+    <div class="section">
+      <h3>Core Rules (Rules 1 
+        10)</h3>
+
+      <div class="rulebox"><strong>Rule 1:</strong> Two subjects joined by <em>and</em> → plural verb.<br>
+      <em>You and I <strong>are</strong> friends. &nbsp;|&nbsp; Bed and table <strong>are</strong> expensive.</em></div>
+
+      <div class="rulebox"><strong>Rule 2:</strong> Two singular subjects joined by <em>and</em> that express ONE idea → singular verb.<br>
+      <em>Slow and steady <strong>wins</strong> the race. &nbsp;|&nbsp; Rice and curry <strong>is</strong> my favourite.</em><br>
+      <span class="highlight">Exception:</span> Time and tide <strong>wait</strong> for no man. (idiomatic)</div>
+
+      <div class="rulebox"><strong>Rule 3:</strong> Singular noun + preposition + plural noun → singular verb (goes with first noun).<br>
+      <em>The water of these streams <strong>is</strong> clean.</em></div>
+
+      <div class="rulebox"><strong>Rule 4:</strong> Subjects joined by <em>as well as, with, together with, along with, rather than, in addition to, except, besides, no less than, and not</em> → verb agrees with the <strong>first subject</strong>.<br>
+      <em>He, as well as they, <strong>is</strong> running. &nbsp;|&nbsp; My friends, as well as I, <strong>are</strong> reading.</em></div>
+
+      <div class="rulebox"><strong>Rule 5:</strong> Two/more singular subjects joined by <em>or, either-or, neither-nor</em> → singular verb.<br>
+      <em>Neither he nor she <strong>was</strong> writing.</em></div>
+
+      <div class="rulebox"><strong>Rule 6:</strong> If one subject is plural (connected by or/nor) → verb is plural and the plural noun is placed closest to the verb.<br>
+      <em>Either the teacher or his students <strong>are</strong> coming.</em></div>
+
+      <div class="rulebox"><strong>Rule 7:</strong> Subjects of different persons connected by or/nor → verb agrees with the subject just before it.<br>
+      <em>Either you or he <strong>is</strong> tall. &nbsp;|&nbsp; Neither he nor they <strong>are</strong> innocent.</em></div>
+
+      <div class="rulebox"><strong>Rule 8 (231 / 123 Rule):</strong> Order of singular persons: <span class="highlight">2nd, 3rd, 1st</span> (You, he, I). Order of plural: <span class="highlight">1st, 2nd, 3rd</span> (We, you, they). In both cases → plural verb.<br>
+      <em>You, he and I <strong>are</strong> friends. &nbsp;|&nbsp; We, you and they <strong>are</strong> neighbours.</em></div>
+
+      <div class="rulebox"><strong>Rule 9:</strong> Vague pronouns (<em>someone, everyone, anyone, no one, somebody, everybody, nobody, many a, each, either, neither</em>) → always singular verb.<br>
+      <em>Somebody <strong>is</strong> hiding. &nbsp;|&nbsp; Each of them <strong>was</strong> happy.</em></div>
+
+      <div class="rulebox"><strong>Rule 10:</strong> Two nouns joined by <em>and</em> but qualified separately by <em>each/every</em> → singular verb.<br>
+      <em>Each day and each night <strong>has</strong> its pleasure.</em></div>
+    </div>
+
+    <hr class="divider">
+    <div class="section">
+      <h3>Special Cases (Rules 11 
+        36)</h3>
+
+      <div class="rulebox"><strong>Rule 11:</strong> Two nouns joined by <em>and</em> together qualified by <em>each/every</em> → singular.<br>
+      <em>Every man and woman <strong>has</strong> to die.</em></div>
+
+      <div class="rulebox"><strong>Rule 12:</strong> Title of book/quotation as subject → singular verb.<br>
+      <em>'Hard Times' <strong>is</strong> a very interesting novel.</em></div>
+
+      <div class="rulebox"><strong>Rule 13:</strong> Subject expressing quality, amount, or distance as a single unit → singular.<br>
+      <em>Two kilometers <strong>is</strong> not a long distance. &nbsp;|&nbsp; Five minutes <strong>is</strong> sufficient.</em></div>
+
+      <div class="rulebox"><strong>Rule 14  
+         Plural form, singular meaning:</strong> Aesthetics, aeronautics, athletics, ethics, linguistics, news, physics, mathematics, politics, measles, The United States, The United Nations → <strong>singular verb</strong>.<br>
+      <em>Measles <strong>is</strong> a dangerous disease. &nbsp;|&nbsp; The United States <strong>is</strong> a big country.</em></div>
+
+      <div class="rulebox"><strong>Rule 15  
+         Always plural:</strong> Clothes, scissors, spectacles, assets, goods, wages, riches, thanks → <strong>plural verb</strong>.<br>
+      <em>His wages <strong>are</strong> Rs. 500. &nbsp;|&nbsp; His scissors <strong>are</strong> not sharp.</em></div>
+
+      <div class="rulebox"><strong>Rule 16  
+         Fraction:</strong> Verb agrees with the noun after "of".<br>
+      <em>Two-thirds of the novel <strong>is</strong> interesting. &nbsp;|&nbsp; Two-thirds of the novels <strong>are</strong> interesting.</em></div>
+
+      <div class="rulebox"><strong>Rule 17:</strong> <span class="red">A number of</span> → plural. &nbsp;|&nbsp; <span class="green">The number of</span> → singular.<br>
+      <em>A number of students <strong>are</strong> playing. &nbsp;|&nbsp; The number of students <strong>is</strong> small.</em></div>
+
+      <div class="rulebox"><strong>Rule 18  
+         Collective phrases:</strong> A band of, a series of, a team of, a herd of, a set of, a flock of, a class of → <strong>singular verb</strong>.<br>
+      <em>A band of musicians <strong>has</strong> come.</em></div>
+
+      <div class="rulebox"><strong>Rule 19  
+         Collective nouns:</strong> Class, committee, government, jury, army, team, family, etc. → singular if denoting a unit; plural if denoting individual members.<br>
+      <em>The class <strong>is</strong> going into the hall. &nbsp;|&nbsp; The class <strong>are</strong> debating this point.</em></div>
+
+      <div class="rulebox"><strong>Rule 20  
+         Always plural nouns:</strong> Cattle, clergy, police, public, people, gentry → <strong>plural verb</strong>.<br>
+      <em>The police <strong>are</strong> coming. &nbsp;|&nbsp; The cattle <strong>are</strong> grazing.</em></div>
+
+      <div class="rulebox"><strong>Rule 21  
+         Always singular nouns (uncountable):</strong> Advice, bread, clothing, furniture, hair, information, luggage, poetry, scenery → <strong>singular verb</strong>.<br>
+      <em>Your information <strong>is</strong> based on facts. &nbsp;|&nbsp; All my furniture <strong>was</strong> sold.</em></div>
+
+      <div class="rulebox"><strong>Rule 22:</strong> Two or more titles/designations of the <em>same person</em> joined by <em>and</em> (no article before second) → singular.<br>
+      <em>The principal and accountant <strong>is</strong> on leave.</em></div>
+
+      <div class="rulebox"><strong>Rule 23:</strong> Two or more titles with <em>the</em> before each → plural.<br>
+      <em>The principal and the accountant <strong>are</strong> on leave.</em></div>
+
+      <div class="rulebox"><strong>Rule 24:</strong> <em>None of</em> → plural verb.<br>
+      <em>None of the candidates <strong>have</strong> come.</em></div>
+
+      <div class="rulebox"><strong>Rule 25  
+         The + adjective:</strong> The blind, the deaf, the old, the poor, the rich, the dead → <strong>plural verb</strong>.<br>
+      <em>The rich <strong>are</strong> cruel. &nbsp;|&nbsp; The poor <strong>are</strong> laborious.</em></div>
+
+      <div class="rulebox"><strong>Rule 26  
+         Nationality words (-sh, -ch, -ese) with "the":</strong> The British, The French, The Nepalese, The Burmese → <strong>plural verb</strong>.<br>
+      <em>The Nepalese <strong>are</strong> honest.</em></div>
+
+      <div class="rulebox"><strong>Rule 27:</strong> <em>More than one</em> + singular noun → singular verb.<br>
+      <em>More than one student <strong>is</strong> playing.</em></div>
+
+      <div class="rulebox"><strong>Rule 28:</strong> <em>More + plural noun + than one</em> → plural verb.<br>
+      <em>More books than one <strong>are</strong> missing.</em></div>
+
+      <div class="rulebox"><strong>Rule 29:</strong> Singular noun + preposition + same singular noun → singular.<br>
+      <em>Letter after letter <strong>has</strong> been sent.</em></div>
+
+      <div class="rulebox"><strong>Rule 30:</strong> <em>All</em> referring to everything → singular. Referring to people/things → plural.<br>
+      <em>All is well. &nbsp;|&nbsp; All are playing.</em></div>
+
+      <div class="rulebox"><strong>Rule 31:</strong> <em>One of</em> + plural noun → singular verb.<br>
+      <em>One of the teachers <strong>is</strong> outside.</em></div>
+
+      <div class="rulebox"><strong>Rule 32:</strong> Two or more adjectives before a singular noun → plural verb.<br>
+      <em>Social and political freedom <strong>are</strong> necessary.</em></div>
+
+      <div class="rulebox"><strong>Rule 33:</strong> <em>One or two</em> → plural verb.<br>
+      <em>One or two boys <strong>are</strong> outside.</em></div>
+
+      <div class="rulebox"><strong>Rule 34:</strong> A clause as subject → singular verb.<br>
+      <em>What you are doing <strong>is</strong> good.</em></div>
+
+      <div class="rulebox"><strong>Rule 35:</strong> Two clauses as subject → plural verb.<br>
+      <em>What you think and do <strong>are</strong> praiseworthy.</em></div>
+
+      <div class="rulebox"><strong>Rule 36:</strong> <em>Nothing but</em> → singular verb.<br>
+      <em>Nothing but trees <strong>is</strong> seen.</em></div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════════════════════ -->
+<!-- UNIT 2: ACTIVE & PASSIVE VOICE -->
+<!-- ═══════════════════════════════════════════════════════ -->
+<div class="unit" id="unit2">
+  <div class="unit-header">
+    <div class="unit-label">Chapter 2 · Grammar</div>
+    <h2>Active Voice & Passive Voice</h2>
+  </div>
+  <div class="unit-body">
+
+    <div class="grid2">
+      <div class="card">
+        <h5>🟢 Active Voice</h5>
+        <p>The subject <strong>does</strong> the action.<br><em>She eats an apple.</em><br><em>They read novels.</em></p>
+      </div>
+      <div class="card">
+        <h5>🔵 Passive Voice</h5>
+        <p>The subject <strong>receives</strong> the action.<br><em>An apple is eaten by her.</em><br><em>Novels are read.</em></p>
+      </div>
+    </div>
+
+    <div class="tipbox">
+      <strong>When to use Passive Voice:</strong><br>
+      (i) Action is more important than the doer &nbsp;|&nbsp; (ii) Doer is unknown &nbsp;|&nbsp; (iii) Scientific/technical writing &nbsp;|&nbsp; (iv) Doer is known to all (America was discovered in 1492.)
+    </div>
+
+    <div class="section">
+      <h3>General Formula</h3>
+      <div class="formula">
+        A.V.: &nbsp; S + V + O<br>
+        P.V.: &nbsp; O(S) + 'be' verb + V3 + by + S(O)
+      </div>
+
+      <h4>Tense-wise Transformation Table</h4>
+      <table>
+        <tr><th>Tense</th><th>Active Voice</th><th>Passive Voice</th></tr>
+        <tr><td>Simple Present</td><td>S + V1/V5 + O</td><td>O(S) + is/am/are + V3 + by + S</td></tr>
+        <tr><td>Present Continuous</td><td>S + is/am/are + V4 + O</td><td>O(S) + is/am/are + being + V3 + by + S</td></tr>
+        <tr><td>Present Perfect</td><td>S + has/have + V3 + O</td><td>O(S) + has/have + been + V3 + by + S</td></tr>
+        <tr><td>Simple Past</td><td>S + V2 + O</td><td>O(S) + was/were + V3 + by + S</td></tr>
+        <tr><td>Past Continuous</td><td>S + was/were + V4 + O</td><td>O(S) + was/were + being + V3 + by + S</td></tr>
+        <tr><td>Past Perfect</td><td>S + had + V3 + O</td><td>O(S) + had been + V3 + by + S</td></tr>
+        <tr><td>Simple Future</td><td>S + shall/will + V1 + O</td><td>O(S) + shall/will + be + V3 + by + S</td></tr>
+        <tr><td>Future Perfect</td><td>S + shall/will + have + V3 + O</td><td>O(S) + shall/will + have been + V3 + by + S</td></tr>
+        <tr><td>Present Perfect Cont.</td><td colspan="2" style="color:#888;font-style:italic;">No Passive Voice</td></tr>
+        <tr><td>Past Perfect Continuous</td><td colspan="2" style="color:#888;font-style:italic;">No Passive Voice</td></tr>
+        <tr><td>Future Continuous</td><td colspan="2" style="color:#888;font-style:italic;">No Passive Voice</td></tr>
+        <tr><td>Future Perfect Cont.</td><td colspan="2" style="color:#888;font-style:italic;">No Passive Voice</td></tr>
+      </table>
+    </div>
+
+    <div class="section">
+      <h3>Special Rules (Key Ones)</h3>
+
+      <div class="rulebox"><strong>Prepositions instead of "by":</strong>
+        <ul>
+          <li><em>know, oblige, marry</em> → <strong>to</strong> &nbsp;|&nbsp; <em>Kalidas is known <strong>to</strong> all.</em></li>
+          <li><em>please, displease, satisfy, cover</em> → <strong>with</strong> &nbsp;|&nbsp; <em>I am pleased <strong>with</strong> Sarita.</em></li>
+          <li><em>interest, contain, consist</em> → <strong>in</strong> &nbsp;|&nbsp; <em>Protein is contained <strong>in</strong> milk.</em></li>
+          <li><em>astonish, surprise, shock</em> → <strong>at</strong> &nbsp;|&nbsp; <em>I was shocked <strong>at</strong> his conduct.</em></li>
+        </ul>
+      </div>
+
+      <div class="rulebox"><strong>Vague pronouns omitted in PV:</strong> You, we, they, one, someone, people, nobody, none → omitted in PV (with "not" used for nobody/none).<br>
+      <em>No one could do that → That could <strong>not</strong> be done.</em></div>
+
+      <div class="rulebox"><strong>Imperative sentences:</strong><br>
+      Order: V1 + obj → <em>Let + object + be + V3</em><br>
+      <em>Bring a glass of water → <strong>Let a glass of water be brought.</strong></em><br><br>
+      Please/Kindly: → <em>You are requested to + V1</em><br>
+      <em>Please give me your pen → <strong>You are requested to give me your pen.</strong></em><br><br>
+      Advice: V1 + obj → <em>O(S) + should be + V3</em><br>
+      <em>Love your country → <strong>Your country should be loved.</strong></em></div>
+
+      <div class="rulebox"><strong>That-clause / Reporting verbs</strong> (say, think, know, believe, consider, etc.):<br>
+      Two patterns:
+      <ol style="margin-top:6px;padding-left:18px;">
+        <li>Subject + be + V3 + to-infinitive<br><em>People consider that he is wise → He is considered <strong>to be</strong> wise.</em></li>
+        <li>It + be + V3 + that-clause<br><em>→ <strong>It is considered that</strong> he is wise.</em></li>
+      </ol></div>
+
+      <div class="rulebox"><strong>S + make + agent + bare infinitive:</strong><br>
+      <em>The joker made us laugh → We were made <strong>to laugh</strong>.</em> (to-infinitive added in PV)</div>
+
+      <div class="rulebox"><strong>Verbs + prep + object:</strong><br>
+      <em>I look after him → He is looked after (by me).</em></div>
+
+      <div class="tipbox"><strong>⚠️ Note:</strong> I, we, you, they, people, all, someone, everyone, no one, nobody, somebody, everybody, anybody → NOT used after "by" in Passive Voice.</div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════════════════════ -->
+<!-- UNIT 3: SEQUENCE OF TENSE -->
+<!-- ═══════════════════════════════════════════════════════ -->
+<div class="unit" id="unit3">
+  <div class="unit-header">
+    <div class="unit-label">Chapter 3 · Grammar</div>
+    <h2>Sequence of Tense / Mixed Use of Tense</h2>
+  </div>
+  <div class="unit-body">
+    <div class="defbox">
+      <strong>Definition:</strong> Mixed Use of Tense (also called Sequence of Tense) refers to rules that govern how the tense of the subordinate clause relates to the tense of the principal clause.
+    </div>
+
+    <div class="section">
+      <h3>Key Rules</h3>
+
+      <div class="rulebox"><strong>Rule 1  
+         Simple Past in main clause:</strong> Subordinate clause → corresponding past (would/could + V1).<br>
+      <em>Gita said that she <strong>would go</strong> to London the next day.</em><br>
+      <span class="highlight">Exception:</span> If subordinate clause states universal truth or present habit → Simple Present.<br>
+      <em>The teacher said that the sun <strong>rises</strong> in the east.</em></div>
+
+      <div class="rulebox"><strong>Rule 2  
+         "since" + Simple Past:</strong> Principal clause → Present Perfect Tense.<br>
+      <em>I <strong>have known</strong> him since he <strong>started</strong> living here.</em></div>
+
+      <div class="rulebox"><strong>Rule 3  
+         "lest":</strong> Imperative in main clause → subordinate clause uses <em>should + V1</em>.<br>
+      <em>Labour hard lest you <strong>should fail</strong>.</em></div>
+
+      <div class="rulebox"><strong>Rule 4  
+         Two past actions at intervals:</strong> First action → Past Perfect; Second action → Simple Past.<br>
+      <em>When the police came, the thieves <strong>had already run away</strong>.</em></div>
+
+      <div class="rulebox"><strong>Rule 5  
+         One past action ongoing when another happened:</strong> Ongoing → Past Continuous; Interrupting action → Simple Past.<br>
+      <em>She met with an accident while she <strong>was crossing</strong> the road.</em></div>
+
+      <div class="rulebox"><strong>Rule 6  
+         Two simultaneous past actions:</strong> Same tense for both.<br>
+      <em>When he pressed the brakes, the bus <strong>stopped</strong>.</em></div>
+
+      <div class="rulebox"><strong>Rule 7  
+         "as if / as though" (present doubt):</strong> Principal → Simple Present; Subordinate → Simple Past.<br>
+      <em>She walks as though she <strong>were</strong> drunk.</em></div>
+
+      <div class="rulebox"><strong>Rule 8  
+         "as if / as though" (real past event):</strong> Principal → Simple Past; Subordinate → Past Perfect.<br>
+      <em>He spoke as though he <strong>had not prepared</strong> well.</em></div>
+
+      <div class="rulebox"><strong>Rule 9  
+         "I wish / If only" (desire):</strong> → Simple Past or (would/could + V1).<br>
+      <em>I wish I <strong>had</strong> a car. &nbsp;|&nbsp; If only I <strong>could lift</strong> that box.</em></div>
+
+      <div class="rulebox"><strong>Rule 10  
+         "I wish / If only" (regret):</strong> → Past Perfect.<br>
+      <em>I wish I <strong>had not left</strong> my home.</em></div>
+
+      <div class="rulebox"><strong>Rule 11  
+         Two clauses with same subject joined by "and":</strong> Same tense (unless time adverbials are given).<br>
+      <em>He <strong>bought</strong> a necklace and <strong>gave</strong> it to his girlfriend.</em></div>
+
+      <div class="rulebox"><strong>Rule 12  
+         "than" or "as":</strong> Both clauses in same tense.<br>
+      <em>He drinks much more than his friend <strong>does</strong>.</em></div>
+
+      <div class="rulebox"><strong>Rule 15  
+         Relative clause:</strong> Relative clause (who/which/that) and main clause use same tense.<br>
+      <em>I dislike those boys who <strong>tease</strong> girls.</em></div>
+
+      <div class="rulebox"><strong>Rule 17  
+         "This/It is the first/second time...":</strong> → Present Perfect Tense.<br>
+      <em>This is the first time I <strong>have ever visited</strong> London.</em></div>
+
+      <div class="rulebox"><strong>Rule 18  
+         "It's time / It's high time":</strong> → Simple Past (present meaning).<br>
+      <em>It's high time we <strong>went</strong> home.</em></div>
+
+      <div class="rulebox"><strong>Rule 19  
+         "It is + period + since":</strong> → Simple Past or Present Perfect.<br>
+      <em>It is three years since I <strong>saw</strong> Bill.</em></div>
+
+      <div class="rulebox"><strong>Rule 20  
+         "No sooner...than":</strong> No sooner + Past Perfect + than + Simple Past.<br>
+      <em>No sooner <strong>had he reached</strong> the station than the train <strong>left</strong>.</em></div>
+
+      <div class="rulebox"><strong>Rule 21  
+         "Hardly...when":</strong> Hardly + Past Perfect + when + Simple Past.<br>
+      <em>Hardly <strong>had I corrected</strong> one set of papers, when another set <strong>arrived</strong>.</em></div>
+
+      <div class="rulebox"><strong>Rule 22  
+         Simple Present main clause + reporting verbs:</strong> Subordinate clause → Simple Future.<br>
+      Verbs: assume, believe, doubt, expect, hope, know, think, wonder, etc.<br>
+      <em>I think he <strong>will sell</strong> the house.</em></div>
+
+      <div class="rulebox"><strong>Rule 23  
+         "until":</strong> Imperative + until + Simple Present Tense.<br>
+      <em>Heat the water until it <strong>boils</strong>.</em></div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════════════════════ -->
+<!-- UNIT 4: NOTE MAKING & SUMMARY WRITING -->
+<!-- ═══════════════════════════════════════════════════════ -->
+<div class="unit" id="unit4">
+  <div class="unit-header">
+    <div class="unit-label">Chapter 4 · Writing Skills</div>
+    <h2>Note Making & Summary Writing</h2>
+  </div>
+  <div class="unit-body">
+
+    <div class="section">
+      <h3>Note Making</h3>
+      <div class="defbox">
+        <strong>Definition:</strong> A systematic method of writing down quickly, briefly, and clearly the important points of a reading text. The word 'note' means a "brief written record as an aid to memory."
+      </div>
+
+      <h4>Types of Notes</h4>
+      <p>Concept ordering notes, revision notes, research notes, comparative notes, and analytical notes.</p>
+
+      <h4>Functions of Note Making</h4>
+      <ul>
+        <li>Keep a record of main points for future reference</li>
+        <li>Revise for an examination or writing assignment</li>
+        <li>Update information</li>
+        <li>Reinforce or compare information from different sources</li>
+        <li>Analyse a text</li>
+      </ul>
+
+      <h4>Note Making Involves</h4>
+      <ul>
+        <li><strong>Reading strategy:</strong> Careful reading to identify the central idea, main points, and supporting details</li>
+        <li><strong>Note-writing techniques:</strong> Topicalising, copying, transcribing, and schematizing</li>
+        <li><strong>Reduction devices:</strong> Using abbreviations and symbols</li>
+        <li><strong>Organization techniques</strong></li>
+        <li><strong>Methods of sequencing:</strong> Numerals and letters, decimalization</li>
+      </ul>
+    </div>
+
+    <hr class="divider">
+
+    <div class="section">
+      <h3>Summary Writing</h3>
+      <div class="defbox">
+        <strong>Definition:</strong> A process of condensing information without changing the original meaning and focus of a passage. 'Summary' means "summed up" or "condensed."
+      </div>
+
+      <h4>Related Terms</h4>
+      <table>
+        <tr><th>Term</th><th>Meaning</th></tr>
+        <tr><td><strong>Abstract</strong></td><td>A very short version of a long text (found in research articles)</td></tr>
+        <tr><td><strong>Synopsis</strong></td><td>A brief account of a research plan submitted before the research begins</td></tr>
+        <tr><td><strong>Précis</strong></td><td>A brief account of something without details or formalities (synonymous with summary)</td></tr>
+        <tr><td><strong>Outline</strong></td><td>A sketch in phrases/sentences that professional writers make before writing a document</td></tr>
+      </table>
+
+      <h4>3 Techniques of Summary Writing</h4>
+      <div class="grid2">
+        <div class="card">
+          <h5>1. Selection</h5>
+          <p>Select the theme, main ideas, and key phrases that support the main ideas.</p>
+        </div>
+        <div class="card">
+          <h5>2. Rejection</h5>
+          <p>Omit: repetitions, examples and illustrations, redundant expressions, minor supporting details.</p>
+        </div>
+      </div>
+      <div class="card" style="margin-top:14px;">
+        <h5>3. Substitution</h5>
+        <p>Synthesis (combining sentences), sentence substitution, and one-word substitution.</p>
+      </div>
+
+      <div class="tipbox" style="margin-top:14px;">
+        <strong>💡 Study Tip:</strong> Summary writing is a productive skill integrating both <strong>reading</strong> and <strong>writing</strong> skills. A good summary is never more than 1/3 the length of the original text.
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════════════════════ -->
+<!-- UNIT 5: MEMO WRITING -->
+<!-- ═══════════════════════════════════════════════════════ -->
+<div class="unit" id="unit5">
+  <div class="unit-header">
+    <div class="unit-label">Chapter 5 · Professional Writing</div>
+    <h2>Memo Writing (Memorandum)</h2>
+  </div>
+  <div class="unit-body">
+    <div class="defbox">
+      <strong>Definition:</strong> A memorandum (memo) is the most frequently used form of communication <em>within</em> an organization. It is also called an inter-office memorandum. It is brief, to the point, and flows in all directions: upward, downward, and horizontal.
+    </div>
+
+    <div class="section">
+      <h3>Objectives of Writing a Memo</h3>
+      <ul>
+        <li>To make announcements</li>
+        <li>To make requests and suggestions</li>
+        <li>To send instructions or directives</li>
+        <li>To clarify previous messages</li>
+        <li>To provide information</li>
+        <li>To report on the progress of a project</li>
+        <li>To confirm matters that have been discussed</li>
+        <li>To state minor amendments to company policies</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h3>3 Parts of a Memorandum</h3>
+
+      <h4>Part 1: The Memohead</h4>
+      <ul>
+        <li>Name of the organization</li>
+        <li>Heading: MEMORANDUM</li>
+        <li>FROM: &nbsp;|&nbsp; TO: &nbsp;|&nbsp; REF: &nbsp;|&nbsp; DATE: &nbsp;|&nbsp; SUBJECT:</li>
+      </ul>
+
+      <h4>Part 2: The Message</h4>
+      <p>The message is paragraphed (fully blocked layout). If making several distinct points, number them for clarity. No complimentary opening required.</p>
+
+      <h4>Part 3: The Ending</h4>
+      <ul>
+        <li><strong>Signature</strong></li>
+        <li><strong>cc</strong> (carbon copies)</li>
+        <li><strong>Enc.</strong> (enclosures)</li>
+      </ul>
+      <div class="tipbox"><strong>⚠️ Important:</strong> NEVER write "Yours sincerely" at the end of a memo. There is no complimentary close.</div>
+    </div>
+
+    <div class="section">
+      <h3>Language & Style</h3>
+      <p>Complete sentences are not always necessary. Determiners and auxiliary verbs are sometimes left out. "Dear" and "Sincerely" are not required. The style is concise and direct.</p>
+    </div>
+
+    <div class="section">
+      <h3>Sample Memo Structure</h3>
+      <div style="background:#f8faff;border:1px solid #dbe4ff;border-radius:8px;padding:18px;font-family:monospace;font-size:13px;line-height:2;">
+        <strong>National Tours and Travels Pvt. Ltd.</strong><br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>MEMORANDUM</strong><br><br>
+        TO: &nbsp;&nbsp; Kushal Pathak, Training Organizer<br>
+        FROM: &nbsp; Ashok Maharjan, General Manager<br>
+        REF: &nbsp;&nbsp; AM/NTTPL<br>
+        DATE: &nbsp; September 3, 2012<br>
+        SUBJECT: SPECIAL TRAINING COURSES ON SALES AND MARKETING<br><br>
+        [Message body here...]<br><br>
+        ___________________<br>
+        [Signature]<br>
+        cc: [names]<br>
+        Enc: [list]
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════════════════════ -->
+<!-- UNIT 6: FORMAL REPORT -->
+<!-- ═══════════════════════════════════════════════════════ -->
+<div class="unit" id="unit6">
+  <div class="unit-header">
+    <div class="unit-label">Chapter 6 · Professional Writing</div>
+    <h2>Formal Technical Report Writing</h2>
+  </div>
+  <div class="unit-body">
+    <div class="defbox">
+      <strong>Definition:</strong> A professional report is a formal communication written for a specific purpose, conveying authentic information to a well-defined audience in a completely impartial and objective manner, and containing recommendations if required. Key qualities: <strong>Usefulness, Clarity, and Economy.</strong>
+    </div>
+
+    <div class="section">
+      <h3>Purposes of a Report</h3>
+      <ul>
+        <li>Presenting data</li>
+        <li>Describing problems and suggesting solutions</li>
+        <li>Discussing and analyzing data</li>
+        <li>Recording events and happenings</li>
+        <li>Analyzing a situation or condition</li>
+        <li>Giving feedback, suggestions, or recommendations</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h3>Types of Reports</h3>
+      <table>
+        <tr><th>Type</th><th>Description</th></tr>
+        <tr><td><strong>Informational</strong></td><td>Presents facts without analysis or recommendations</td></tr>
+        <tr><td><strong>Analytical</strong></td><td>Analyzes a problem and provides recommendations</td></tr>
+        <tr><td><strong>Formal</strong></td><td>Result of thorough investigation; longer, elaborate; fixed format</td></tr>
+        <tr><td><strong>Non-formal (Informal)</strong></td><td>Brief; routine; uses printed forms, letter, or memo format</td></tr>
+        <tr><td><strong>Routine</strong></td><td>Periodic/regular reports (daily, monthly)</td></tr>
+        <tr><td><strong>Special</strong></td><td>Prepared for specific, one-time situations</td></tr>
+      </table>
+    </div>
+
+    <div class="section">
+      <h3>4 Formats of Reports</h3>
+      <div class="grid2">
+        <div class="card"><h5>1. Printed Forms</h5><p>For routine data collection. Simple  
+           fill in blanks or tick items. Systematic and objective.</p></div>
+        <div class="card"><h5>2. Letter Format</h5><p>For short reports communicated to someone <strong>outside</strong> the organization.</p></div>
+        <div class="card"><h5>3. Memo Format</h5><p>For short reports communicated <strong>within</strong> the organization. Contains memo elements + additional sections.</p></div>
+        <div class="card"><h5>4. Manuscript Format</h5><p>For long and formal reports. Divided into sections and sub-sections with clear headings.</p></div>
+      </div>
+    </div>
+
+    <div class="section">
+      <h3>Parts of a Formal Technical Report</h3>
+      <p>A formal report has three divisions:</p>
+
+      <h4>Front Matter</h4>
+      <ol>
+        <li>Cover Page</li>
+        <li>Title Page</li>
+        <li>Preface / Letter of Transmittal</li>
+        <li>Acknowledgements</li>
+        <li>Table of Contents</li>
+        <li>List of Figures and Tables</li>
+        <li>Abstract and Summary</li>
+      </ol>
+
+      <h4>Main Body</h4>
+      <ol start="8">
+        <li>Introduction (Background, Purpose, Significance, Scope, Methods, Organization)</li>
+        <li>Discussion or Description</li>
+        <li>Conclusions</li>
+        <li>Recommendations</li>
+      </ol>
+
+      <h4>Back Matter</h4>
+      <ol start="12">
+        <li>Appendix</li>
+        <li>Glossary</li>
+        <li>List of References</li>
+        <li>Bibliography</li>
+        <li>Index</li>
+      </ol>
+
+      <div class="tipbox"><strong>💡 Remember:</strong> Informational reports may have no conclusions/recommendations. Not all elements are always required.</div>
+    </div>
+
+    <div class="section">
+      <h3>Body Section Details</h3>
+      <h4>Introduction addresses:</h4>
+      <p>Background information, Purpose of the report, Significance, Scope, Methods and sources, Organization of the report.</p>
+
+      <h4>Discussion Section Tips:</h4>
+      <ul>
+        <li>Provide information in the most logical order</li>
+        <li>Provide ample explanation for complex information</li>
+        <li>Use headings and subheadings</li>
+        <li>Introduce graphics and provide explanations</li>
+        <li>Identify each figure with a title and number</li>
+        <li>Place all tables and figures after they are mentioned in the text</li>
+      </ul>
+
+      <h4>References vs Bibliography:</h4>
+      <p>A <strong>List of References</strong> contains only sources actually cited in the text. A <strong>Bibliography</strong> is a list of all sources consulted, arranged alphabetically and serially numbered.</p>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════════════════════ -->
+<!-- UNIT 7: GROUP DISCUSSION -->
+<!-- ═══════════════════════════════════════════════════════ -->
+<div class="unit" id="unit7">
+  <div class="unit-header">
+    <div class="unit-label">Chapter 7 · Communication Skills</div>
+    <h2>Group Discussion (GD)</h2>
+  </div>
+  <div class="unit-body">
+    <div class="defbox">
+      <strong>Definition:</strong> A Group Discussion is a process where exchange of ideas and opinions are debated upon. A small group is given a topic (general or specific), a time limit, and each participant must share their views. Panelists judge the discussion and select the best candidate.
+    </div>
+
+    <div class="section">
+      <h3>10 Tips for Group Discussion</h3>
+
+      <table>
+        <tr><th>#</th><th>Tip</th><th>Key Point</th></tr>
+        <tr><td>1</td><td><strong>Adequate Subject Matter</strong></td><td>Have in-depth knowledge; be aware of current events locally and globally. Relevant data gives you an edge.</td></tr>
+        <tr><td>2</td><td><strong>Read Widely</strong></td><td>Regular reading (not last-minute prep) adds to knowledge and vocabulary. Choose content-rich magazines.</td></tr>
+        <tr><td>3</td><td><strong>Choose Quality Sources</strong></td><td>Avoid advertisement-heavy magazines; choose informative content.</td></tr>
+        <tr><td>4</td><td><strong>Know Repeated Topics</strong></td><td>Topics like terrorism, gender inequality, poverty, privatization reappear often. Prepare these with facts and dates.</td></tr>
+        <tr><td>5</td><td><strong>Work on Communication Skills</strong></td><td>Good vocabulary, command over English, and rehearsal with friends before the GD.</td></tr>
+        <tr><td>6</td><td><strong>Listen to the Topic Carefully</strong></td><td>Structure your points on paper first. Avoid deviating from the topic or making strong statements at the start.</td></tr>
+        <tr><td>7</td><td><strong>Maintain Balance in Tone</strong></td><td>Don't raise your voice in objection. Find common ground rather than dismissing others' views.</td></tr>
+        <tr><td>8</td><td><strong>Listening Skills are Essential</strong></td><td>Let others speak. Acknowledge the speaker with nods or "yes". Shows you are an active participant.</td></tr>
+        <tr><td>9</td><td><strong>Body Gestures are Important</strong></td><td>Sit straight; don't lean back, knock the table, or get distracted. Panelists observe your body language.</td></tr>
+        <tr><td>10</td><td><strong>Be First and Last to Speak</strong></td><td>Initiating gives advantage. Closing/summarizing also earns brownie points. Conclude even if no consensus was reached.</td></tr>
+      </table>
+
+      <div class="tipbox">
+        <strong>💡 Golden Analogy:</strong> "Imagine you are driving  
+         you have the power to accelerate or brake. Be that conscientious driver in a GD. Take initiative, know when to brake, and steer towards a conclusion."
+      </div>
+    </div>
+
+    <div class="section">
+      <h3>What NOT to Do in a GD</h3>
+      <ul>
+        <li>Do not open with strong statements like "I completely agree/disagree"</li>
+        <li>Do not deviate from the main topic</li>
+        <li>Do not dismiss others' points without acknowledging them</li>
+        <li>Do not speak throughout  
+           give others a chance</li>
+        <li>Do not get distracted (e.g., looking at the door when it opens)</li>
+        <li>Do not lean back on the chair or knock the table</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════════════════════ -->
+<!-- UNIT 8: IN-TEXT CITATION -->
+<!-- ═══════════════════════════════════════════════════════ -->
+<div class="unit" id="unit8">
+  <div class="unit-header">
+    <div class="unit-label">Chapter 8 · Academic Writing</div>
+    <h2>In-text Citation  
+       APA & MLA</h2>
+  </div>
+  <div class="unit-body">
+    <div class="defbox">
+      <strong>Purpose:</strong> Citation is giving credit to the original author when you use their ideas, information, or exact words in your writing. Two main styles: <strong>APA</strong> (American Psychological Association) and <strong>MLA</strong> (Modern Language Association).
+    </div>
+
+    <div class="section">
+      <h3>APA Style</h3>
+      <p>Uses the <strong>Author-Year</strong> system. Past tense or present perfect tense is used in signal phrases.</p>
+
+      <h4>1. Author named in a signal phrase</h4>
+      <div class="exbox">Althen (2003) <em>has contended</em> that people's communication style is "strongly influenced by cultural values" (p. 33).</div>
+      <p>→ Format: <span class="highlight">Author (Year) has verb that "quote" (p. page).</span></p>
+
+      <h4>2. Author named in parentheses</h4>
+      <div class="exbox">There is a strong need for educational training (Grisham, 1999).</div>
+      <p>→ Format: <span class="highlight">(Author's last name, Year)</span></p>
+
+      <h4>3. Online/Web sources</h4>
+      <div class="exbox">HIV testing is essential in preventing transmission (World Health Organization, 2004).</div>
+      <p>→ Use organization name if no individual author.</p>
+
+      <h4>APA Reference List Format (Book)</h4>
+      <div class="formula">
+        Author, I. (Year). Title of book in italics (edition). Place: Publisher.<br><br>
+        Althen, G. (2003). American ways: A guide for foreigners in the United States (2nd ed.). Yarmouth: Intercultural Press.
+      </div>
+      <p>APA elements for a book: <strong>1. Author, 2. Year, 3. Title &amp; subtitle, 4. Place, 5. Publisher</strong></p>
+    </div>
+
+    <hr class="divider">
+
+    <div class="section">
+      <h3>MLA Style</h3>
+      <p>Uses the <strong>Author-Page</strong> system.</p>
+
+      <h4>1. Author named in a signal phrase</h4>
+      <div class="exbox">Althen contends that people's communication style is "strongly influenced by cultural values" (33).</div>
+      <p>→ Format: <span class="highlight">Author verb that "quote" (page number).</span></p>
+
+      <h4>2. Author named in parentheses</h4>
+      <div class="exbox">There is a strong need for educational training (Grisham 190).</div>
+      <p>→ Format: <span class="highlight">(Author's last name Page number)</span> — no comma between name and page.</p>
+
+      <h4>3. Online sources</h4>
+      <div class="exbox">HIV testing is essential (World Health Organization 1).</div>
+
+      <h4>MLA Works Cited Format</h4>
+      <div class="formula">
+        Author Last, First. Title of Book. Edition. Place: Publisher, Year.<br><br>
+        Althen, Gary. American Ways: A Guide for Foreigners in the United States. 2nd ed. Yarmouth: Intercultural P, 2003.
+      </div>
+    </div>
+
+    <div class="section">
+      <h3>APA vs MLA  
+         Quick Comparison</h3>
+      <table>
+        <tr><th>Feature</th><th>APA</th><th>MLA</th></tr>
+        <tr><td>In-text format</td><td>(Author, Year) or Author (Year)</td><td>(Author Page) or Author (page)</td></tr>
+        <tr><td>Year placement</td><td>Right after author name</td><td>At the end in parentheses</td></tr>
+        <tr><td>Signal phrase tense</td><td>Past or Present Perfect</td><td>Present tense</td></tr>
+        <tr><td>Reference list name</td><td>References</td><td>Works Cited</td></tr>
+        <tr><td>Page indicator</td><td>(p. 33) or (pp. 33 
+          35)</td><td>(33)  
+           no "p."</td></tr>
+        <tr><td>Author name in ref list</td><td>Last name, F. (initials only)</td><td>Last name, First name (full)</td></tr>
+        <tr><td>Title of book</td><td><em>Italics</em></td><td><em>Italics</em></td></tr>
+        <tr><td>Used in fields</td><td>Social sciences, education, psychology</td><td>Humanities, language, literature</td></tr>
+      </table>
+
+      <div class="tipbox" style="margin-top:16px;">
+        <strong>⚠️ Key rule for both styles:</strong> The Works Cited / References list at the end must include <em>only</em> the sources actually cited in the text, arranged <strong>alphabetically</strong> by authors' last names.
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- ═══════════════════════════════════════════════════════ -->
+<!-- UNIT 9: EMAIL WRITING -->
+<!-- ═══════════════════════════════════════════════════════ -->
+<div class="unit" id="unit9">
+  <div class="unit-header">
+    <div class="unit-label">Chapter 9 · Professional Writing</div>
+    <h2>Email Writing (Electronic Mail)</h2>
+  </div>
+  <div class="unit-body">
+
+    <div class="defbox">
+      <strong>Definition:</strong> Electronic mail (e-mail) is an effective, low-cost, and instant method of communication. Messages are keyed into a computer workstation and transmitted to recipients. A single message can be sent simultaneously to many recipients.
+    </div>
+
+    <div class="section">
+      <h3>Evolution of E-mail</h3>
+      <p>Businesses today operate in a highly competitive market where high-speed communication and information transfer are essential. Most office activities are electronic, using computer-based technology. E-mail has evolved as the primary method of workplace communication — replacing formal printed memos, faxes, and letters in many situations.</p>
+
+      <h4>How Email Works (Path of a Message)</h4>
+      <div style="background:#f8faff;border:1px solid #dbe4ff;border-radius:8px;padding:16px;font-size:13px;line-height:2;">
+        1. You prepare the message on your computer.<br>
+        2. Enter the recipient's email address and click <strong>Send</strong>.<br>
+        3. Your message is sent to a <strong>server</strong> connected to the Internet.<br>
+        4. The server sends your message to a <strong>router</strong>.<br>
+        5. The message travels from router to router until it reaches the correct one.<br>
+        6. Routers are connected by cables and telephone lines.<br>
+        7. A router sends your message to the server connected to the recipient's computer.<br>
+        8. The server reads the address and passes your message to the <strong>recipient</strong>.
+      </div>
+    </div>
+
+    <div class="section">
+      <h3>Advantages of E-mail</h3>
+      <ul>
+        <li>High-speed send/receive cycle</li>
+        <li>Direct input and retrieval from keyboard</li>
+        <li>Virtually instant despatch/retrieval</li>
+        <li>Simultaneous circulation to pre-selected groups</li>
+        <li>Other files can be attached to emails</li>
+        <li>Saves time and effort compared to producing formal printed memos and letters</li>
+        <li>Messages can be retained on an electronic file or printed as hard copy</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h3>Parts / Structure of an Email</h3>
+      <table>
+        <tr><th>Part</th><th>Description</th></tr>
+        <tr><td><strong>To:</strong></td><td>Recipient's email address — key it accurately</td></tr>
+        <tr><td><strong>From:</strong></td><td>Sender's email address (auto-inserted by the computer)</td></tr>
+        <tr><td><strong>Date/Time:</strong></td><td>Automatically inserted by your computer</td></tr>
+        <tr><td><strong>Subject:</strong></td><td>Use an appropriate, specific subject heading</td></tr>
+        <tr><td><strong>Salutation/Greeting:</strong></td><td>Keep it informal and friendly for informal emails (e.g., "Hi Gita" or "Hello Thomas")</td></tr>
+        <tr><td><strong>Body/Message:</strong></td><td>Short sentences, short paragraphs; write in a casual style as if speaking; less formal than other business documents</td></tr>
+        <tr><td><strong>Closing:</strong></td><td>Informal emails: no formal closing needed (e.g., "See you soon, Shirley"). Semi-formal: add a signature block.</td></tr>
+        <tr><td><strong>Signature Block</strong></td><td>Name, designation, organization, phone, mobile, email, website</td></tr>
+        <tr><td><strong>Disclaimer</strong></td><td>Optional; for confidential/professional emails: states the email may be confidential and unauthorized use is prohibited.</td></tr>
+      </table>
+    </div>
+
+    <div class="section">
+      <h3>Types of Emails: Formal vs Informal</h3>
+      <div class="grid2">
+        <div class="card">
+          <h5>📧 Informal Email</h5>
+          <ul style="padding-left:16px;margin:0;font-size:13px;">
+            <li>Informal greeting (Hi/Hello + first name)</li>
+            <li>Contractions are OK (I'm, you've, I'd)</li>
+            <li>Chatty, casual style</li>
+            <li>No formal closing needed</li>
+            <li>Short and friendly</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h5>📨 Semi-formal / Business Email</h5>
+          <ul style="padding-left:16px;margin:0;font-size:13px;">
+            <li>Slightly less informal (Dear + name)</li>
+            <li>Short sentences — no padding!</li>
+            <li>Short paragraphs</li>
+            <li>Write as if speaking naturally</li>
+            <li>Standard signature block at end</li>
+            <li>Disclaimer if confidential</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <h3>Pitfalls / Complaints About Email</h3>
+      <ul>
+        <li>People write emails too casually and forget basic rules of good business writing</li>
+        <li>Use of text abbreviations (BTW, TTYL, BFN) is inappropriate in business use</li>
+        <li>Emails may be read within seconds of being sent — you cannot call them back. <strong>Always proofread before clicking send!</strong></li>
+        <li>Lack of respect for the reader — spelling, grammar, and formatting errors</li>
+        <li>Misuse of Reply All when only the sender needs to read the response</li>
+        <li>Using email for messages that are too sensitive or complex (should be face-to-face)</li>
+      </ul>
+      <div class="tipbox">
+        <strong>⚠️ Golden Rule:</strong> "Once your message is sent, it may be read by the recipient within seconds. Have some respect for your reader — make sure it is <em>right</em> before you click 'send'."
+      </div>
+    </div>
+
+    <div class="section">
+      <h3>Sample Email Structures</h3>
+
+      <h4>Sample 1  
+         Informal Email</h4>
+      <div style="background:#f8faff;border:1px solid #dbe4ff;border-radius:8px;padding:16px;font-family:monospace;font-size:13px;line-height:1.9;">
+        <strong>To:</strong> GinaPorter@GlobalComms.co.uk<br>
+        <strong>From:</strong> shirley@shirleytaylor.com (Shirley Taylor)<br>
+        <strong>Date:</strong> 22.10.04 9.55<br>
+        <strong>Subject:</strong> Lunch 28 October<br><br>
+        Hello Gina<br><br>
+        This is just a reminder that I'm looking forward to meeting you for lunch next Friday 28th. I am glad you've arranged for Jenny Chew to join us too. Can I suggest 12:30 at Hemingways on Orchard Road? I hear this new restaurant is fabulous. My treat of course. Please confirm.<br><br>
+        Shirley
+      </div>
+
+      <h4>Sample 2  
+         Semi-Formal Business Email (with signature block)</h4>
+      <div style="background:#f8faff;border:1px solid #dbe4ff;border-radius:8px;padding:16px;font-family:monospace;font-size:13px;line-height:1.9;margin-top:12px;">
+        <strong>To:</strong> MandyWilson@Pioneer.co.sg<br>
+        <strong>From:</strong> shirley@shirleytaylor.com<br>
+        <strong>Date:</strong> 14.8.04 14:30<br>
+        <strong>Subject:</strong> Customer Services Training<br><br>
+        Dear Mandy<br><br>
+        We are considering sending some of our staff on a training course on Customer Services. Do you have a suitable course available within the next few months? If so please let me have the dates, times plus costs.<br><br>
+        If there isn't a regular Pioneer course scheduled, can you tailor-make a course specially for our staff? We could hold it in our conference room.<br><br>
+        Perhaps we can arrange to meet to discuss this — are you free next Friday 20 August at 11 am?<br><br>
+        Shirley Taylor<br>
+        Manager, ST Training and Consultancy<br>
+        Tel: +65 64726076 &nbsp;|&nbsp; Mobile: +65 96355907<br>
+        e-mail: shirley@shirleytaylor.com<br><br>
+        <em>[This e-mail may be confidential and privileged. Any form of unauthorised use is prohibited.]</em>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════════════════════ -->
+<!-- UNIT 10: JOB APPLICATION & CV -->
+<!-- ═══════════════════════════════════════════════════════ -->
+<div class="unit" id="unit10">
+  <div class="unit-header">
+    <div class="unit-label">Chapter 10 · Professional Writing</div>
+    <h2>Job Application Letter & CV / Résumé</h2>
+  </div>
+  <div class="unit-body">
+
+    <div class="defbox">
+      <strong>Purpose:</strong> A job application letter is a formal letter sent to an employer expressing interest in a position. It is always accompanied by a Curriculum Vitae (CV) or résumé that lists the applicant's qualifications, skills, and experience.
+    </div>
+
+    <div class="section">
+      <h3>Job Application Letter  
+         Structure</h3>
+      <table>
+        <tr><th>Part</th><th>Content</th></tr>
+        <tr><td><strong>Sender's Address</strong></td><td>Your full address (top left or top right)</td></tr>
+        <tr><td><strong>Date</strong></td><td>Full date (e.g., 21 February 2026)</td></tr>
+        <tr><td><strong>Recipient's Address</strong></td><td>Name, designation, company, address</td></tr>
+        <tr><td><strong>Subject Line</strong></td><td>e.g., Application for the Post of Communication Officer</td></tr>
+        <tr><td><strong>Salutation</strong></td><td>Dear Sir/Madam, or Dear Mr./Ms. [Last Name]</td></tr>
+        <tr><td><strong>Opening Paragraph</strong></td><td>State the post you're applying for and where you saw the advertisement</td></tr>
+        <tr><td><strong>Body Paragraphs</strong></td><td>Highlight relevant qualifications, skills, and experience that make you suitable</td></tr>
+        <tr><td><strong>Closing Paragraph</strong></td><td>Express willingness for an interview, reference to CV attached</td></tr>
+        <tr><td><strong>Complimentary Close</strong></td><td>Yours faithfully (if you don't know the name) / Yours sincerely (if you used their name)</td></tr>
+        <tr><td><strong>Signature + Name</strong></td><td>Sign and print your name below</td></tr>
+        <tr><td><strong>Enclosure</strong></td><td>Enc: CV</td></tr>
+      </table>
+
+      <div class="tipbox">
+        <strong>💡 Key Rule:</strong> Use <strong>"Yours faithfully"</strong> when you begin with "Dear Sir/Madam." Use <strong>"Yours sincerely"</strong> when you begin with the person's actual name (e.g., "Dear Ms. Shrestha").
+      </div>
+    </div>
+
+    <div class="section">
+      <h3>Sample Application Letter Opening</h3>
+      <div style="background:#f8faff;border:1px solid #dbe4ff;border-radius:8px;padding:16px;font-size:13px;line-height:2;">
+        [Your Address]<br>
+        [Date]<br><br>
+        The HR Manager<br>
+        Nepal Television<br>
+        Singha Durbar, Kathmandu<br><br>
+        <strong>Subject: Application for the Post of Communication Officer</strong><br><br>
+        Dear Sir/Madam,<br><br>
+        I am writing to apply for the post of Communication Officer as advertised in <em>The Kathmandu Post</em> dated [date]. I believe my academic background and communication skills make me a suitable candidate for this position.<br><br>
+        [Body: Qualifications, skills, relevant experience]<br><br>
+        I have enclosed my CV for your consideration and would welcome the opportunity to attend an interview at your convenience.<br><br>
+        Yours faithfully,<br><br>
+        ___________________<br>
+        [Your Full Name]<br><br>
+        Enc: CV
+      </div>
+    </div>
+
+    <div class="section">
+      <h3>CV / Curriculum Vitae  
+         Structure</h3>
+      <p>A CV is a document that summarizes your educational background, work experience, skills, and other relevant information. It supports your job application letter.</p>
+
+      <table>
+        <tr><th>Section</th><th>What to Include</th></tr>
+        <tr><td><strong>Personal Information</strong></td><td>Full name, address, phone number, email, date of birth, nationality</td></tr>
+        <tr><td><strong>Career Objective</strong></td><td>1 
+          2 sentences about your professional goals and what you offer the employer</td></tr>
+        <tr><td><strong>Educational Qualifications</strong></td><td>List from most recent to oldest: degree, institution, year, grade/percentage</td></tr>
+        <tr><td><strong>Work Experience</strong></td><td>Company name, designation, duration, key responsibilities (most recent first)</td></tr>
+        <tr><td><strong>Skills</strong></td><td>Technical skills, language skills, computer skills, soft skills</td></tr>
+        <tr><td><strong>Extracurricular / Achievements</strong></td><td>Awards, certificates, positions held, clubs, volunteer work</td></tr>
+        <tr><td><strong>References</strong></td><td>2 
+          3 professional references with name, designation, contact info (or "Available upon request")</td></tr>
+      </table>
+
+      <div class="tipbox">
+        <strong>💡 Key Tips:</strong> A CV should be <strong>job-specific</strong> — tailor it to the post you're applying for. Keep it concise (1 
+        2 pages). Use reverse chronological order for education and experience.
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════════════════════ -->
+<!-- UNIT 11: ORAL PRESENTATION -->
+<!-- ═══════════════════════════════════════════════════════ -->
+<div class="unit" id="unit11">
+  <div class="unit-header">
+    <div class="unit-label">Chapter 11 · Communication Skills</div>
+    <h2>Oral Presentation</h2>
+  </div>
+  <div class="unit-body">
+
+    <div class="defbox">
+      <strong>Definition:</strong> An oral presentation is a talk or speech in which a new product, idea, or piece of work is shown and explained to a relatively smaller and knowledgeable audience. It is given for specific purposes: class presentations, professional presentations on topics like sales, marketing, production, or proposing a solution to a problem.
+    </div>
+
+    <div class="section">
+      <h3>Characteristics of a Good Presentation</h3>
+      <ul>
+        <li>There is a <strong>clear structure</strong> with an introduction, a discussion, and a conclusion</li>
+        <li>The presenter <strong>recognizes and matches the audience's needs</strong>, interests, and level of understanding</li>
+        <li>Facts and figures are <strong>visually represented</strong> in tables, graphs, and charts</li>
+        <li>Humor and anecdotes may be used to create a friendly relationship with the audience (with care)</li>
+        <li>The presenter <strong>speaks clearly and logically</strong> and uses body language effectively</li>
+        <li>Questions are given serious attention and regarded as an essential part of the presentation</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h3>Preparing a Presentation  
+         Process</h3>
+      <ul>
+        <li>Identify the <strong>purpose and goal</strong> of the presentation</li>
+        <li>Analyze the <strong>audience and their needs</strong></li>
+        <li>Collect the relevant information</li>
+        <li>Design and organize the information</li>
+        <li>Time the presentation</li>
+        <li>Decide on the <strong>medium</strong> of presentation and visual aids</li>
+        <li>Become familiar with the location of the presentation</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h3>3-Part Structure of a Presentation</h3>
+      <table>
+        <tr><th>Section</th><th>Purpose</th><th>Useful Phrases</th></tr>
+        <tr>
+          <td><strong>Opening Section</strong></td>
+          <td>Greet, introduce yourself, outline the presentation</td>
+          <td>"The presentation today is divided into three parts. First, I'll... Following that I'll... Finally, I'll..."</td>
+        </tr>
+        <tr>
+          <td><strong>Middle Section</strong></td>
+          <td>Introduce sections, expand, use transitions, review earlier points, focus audience</td>
+          <td>"I'd like to start/begin by..." / "Well, we've looked at... Now I'd like to discuss..." / "I'd like to expand on..." / "As I mentioned earlier..."</td>
+        </tr>
+        <tr>
+          <td><strong>Concluding Section</strong></td>
+          <td>Summarize, invite questions, close</td>
+          <td>"Finally, let's summarize some of the main points." / "To conclude, I'd like to summarize." / "Does anyone have any questions or comments before we conclude today?"</td>
+        </tr>
+      </table>
+    </div>
+
+    <div class="section">
+      <h3>Delivering the Presentation  
+         5 Key Points</h3>
+
+      <div class="rulebox"><strong>1. Do Not Read the Presentation:</strong> A presentation is meant to be an oral, face-to-face communication. Reading a script or slides is possibly the worst thing a presenter can do — it fails to grab attention and disrespects the audience.</div>
+
+      <div class="rulebox"><strong>2. Preview the Presentation:</strong> Give a short glance at how the presentation has been organized. Signal to the audience what will come in the beginning, middle, and end. This helps the audience understand the structure.</div>
+
+      <div class="rulebox"><strong>3. Use Transitions in Language:</strong> Using transition words such as <em>first, in addition to, what is more, we can think of, the next step, another important aspect</em> helps the audience follow the direction of the presentation and know when you are shifting to a new idea.</div>
+
+      <div class="rulebox"><strong>4. Modulate Your Voice:</strong> Change the pitch, volume, and intonation according to context. Speaking louder when emphasizing an idea is effective. Appropriate pauses give audiences time to receive and process information.</div>
+
+      <div class="rulebox"><strong>5. Interact with the Audience:</strong> To arouse and sustain audience interest, interact directly or indirectly. To maintain ongoing communication, avoid things that reduce audience involvement — diverting from topic, stopping to speak, asking for something constantly.</div>
+    </div>
+
+    <div class="section">
+      <h3>Rehearsal  
+         Why It Matters</h3>
+      <p>Rehearsal helps to:</p>
+      <ul>
+        <li>Coordinate speech with visual aids</li>
+        <li>Know if information has been properly edited</li>
+        <li>Check if the duration of the presentation is appropriate</li>
+        <li>Minimize anxiety and fear</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h3>Handling Tough Questions</h3>
+      <table>
+        <tr><th>Situation</th><th>What to Say</th></tr>
+        <tr><td>You don't have the answer</td><td>"I want to answer your question completely, but I don't have that information with me right now. Could you give me your email after the presentation so I can send you a complete response?"</td></tr>
+        <tr><td>You didn't understand the question</td><td>"Could you repeat that, please?" / "Could you rephrase that, please?" / "Let me make sure I understand completely. Do you mean that...?"</td></tr>
+        <tr><td>Inviting more questions</td><td>"Does anyone have any questions or comments?" / "If you'd like me to elaborate or clarify anything, please ask."</td></tr>
+        <tr><td>Closing the presentation</td><td>"If there are no further questions, I'd like to thank you very much for your attention. Please feel free to contact me."</td></tr>
+      </table>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════════════════════ -->
+<!-- UNIT 12: REPORT/PROPOSAL FORMATTING GUIDELINES -->
+<!-- ═══════════════════════════════════════════════════════ -->
+<div class="unit" id="unit12">
+  <div class="unit-header">
+    <div class="unit-label">Chapter 12 · Academic Writing</div>
+    <h2>Report / Proposal Formatting Guidelines</h2>
+  </div>
+  <div class="unit-body">
+    <div class="defbox">
+      <strong>Purpose:</strong> These are the official formatting guidelines for submitting academic reports and proposals at Pokhara University (BCSIT program).
+    </div>
+
+    <div class="section">
+      <h3>Complete Formatting Rules</h3>
+      <table>
+        <tr><th>Element</th><th>Specification</th></tr>
+        <tr><td><strong>Cover</strong></td><td>Size ≥ page size, not more than 15mm greater. Black cover, golden lettering for final submission.</td></tr>
+        <tr><td><strong>Font Size  
+           Normal Text</strong></td><td>12 point</td></tr>
+        <tr><td><strong>Font Size  
+           Headings</strong></td><td>16 point, Bold</td></tr>
+        <tr><td><strong>Font Size  
+           Subheadings</strong></td><td>14 point, Bold</td></tr>
+        <tr><td><strong>Font Style</strong></td><td>Times New Roman</td></tr>
+        <tr><td><strong>Line Spacing</strong></td><td>1.5</td></tr>
+        <tr><td><strong>Ink</strong></td><td>Black; laser printing recommended. Color printing NOT recommended except when necessary.</td></tr>
+        <tr><td><strong>Binding (Final)</strong></td><td>Bound along left side. Must open flat. Book binding for final university submission. Tape binding allowed for other submissions.</td></tr>
+        <tr><td><strong>Left Margin</strong></td><td>1.5 inches</td></tr>
+        <tr><td><strong>Right Margin</strong></td><td>1.25 inches</td></tr>
+        <tr><td><strong>Top & Bottom Margins</strong></td><td>1 inch each</td></tr>
+        <tr><td><strong>Header & Footer</strong></td><td>0.5 inches each</td></tr>
+        <tr><td><strong>Main Content Numbering</strong></td><td>1, 2, 3 format — displayed on <strong>top right corner</strong></td></tr>
+        <tr><td><strong>Preliminary Content Numbering</strong></td><td>i, ii, iii format (for abstract, acknowledgements, TOC, list of figures, etc.) — displayed on <strong>bottom center</strong></td></tr>
+      </table>
+
+      <div class="tipbox">
+        <strong>💡 Remember:</strong> Binding is only required for the final submission, not mid-terms. Preliminary pages (abstract, acknowledgements, table of contents) use Roman numerals (i, ii, iii). The main content pages use Arabic numerals (1, 2, 3).
+      </div>
+    </div>
+  </div>
+</div>
+
+</div><!-- /wrapper -->
+
+<div style="text-align:center;padding:20px;color:#999;font-size:12px;">
+  English  
+   Technical Communication Complete Study Notes &nbsp;|&nbsp; BCSIT, Pokhara University
+</div>
+
+</body>
+</html>
