@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Card</title>
+    <style>
+        body {
+            font-family: Arial;
+            padding: 20px;
+        }
+
+        .error {
+            color: red;
+            margin-top: 10px;
+        }
+
+        .student-card {
+            border: 1px solid #ccc;
+            padding: 12px;
+            margin-top: 10px;
+            border-radius: 6px;
+            background-color: #f4f4f4;
+        }
+
+        button {
+            margin-top: 8px;
+        }
+    </style>
+</head>
+<body>
+
+<h2>Add Student</h2>
+
+<form id="studentForm">
+    Name:
+    <input type="text" id="name"><br><br>
+
+    Roll Number:
+    <input type="number" id="roll"><br><br>
+
+    Semester:
+    <select id="semester">
+        <option value="">Select Semester</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+    </select><br><br>
+
+    Program:
+    <input type="radio" name="program" value="BCSIT">BCSIT
+    <input type="radio" name="program" value="BBA">BBA
+    <input type="radio" name="program" value="BCA">BCA
+    <br><br>
+
+    <button type="submit">Add Student</button>
+</form>
+
+<div id="errorMsg" class="error"></div>
+
+<hr>
+
+<div id="studentContainer"></div>
+
+<script>
+const form = document.getElementById("studentForm");
+const container = document.getElementById("studentContainer");
+const errorMsg = document.getElementById("errorMsg");
+
+form.addEventListener("submit", function(e) {
+    e.preventDefault();
+    errorMsg.textContent = "";
+
+    const name = document.getElementById("name").value.trim();
+    const roll = document.getElementById("roll").value;
+    const semester = document.getElementById("semester").value;
+    const program = document.querySelector('input[name="program"]:checked');
+
+    // Validation
+    if (name === "") {
+        errorMsg.textContent = "Name must not be empty";
+        return;
+    }
+
+    if (roll <= 0) {
+        errorMsg.textContent = "Roll number must be a positive number";
+        return;
+    }
+
+    if (!semester) {
+        errorMsg.textContent = "Please select semester";
+        return;
+    }
+
+    if (!program) {
+        errorMsg.textContent = "Please select program";
+        return;
+    }
+
+    // Create student card dynamically
+    const card = document.createElement("div");
+    card.classList.add("student-card");
+
+    card.innerHTML = `
+        <strong>Name:</strong> ${name}<br>
+        <strong>Roll:</strong> ${roll}<br>
+        <strong>Semester:</strong> ${semester}<br>
+        <strong>Program:</strong> ${program.value}<br>
+        <button class="deleteBtn">Delete</button>
+    `;
+
+    container.appendChild(card);
+    form.reset();
+});
+
+// Event Delegation for Delete
+container.addEventListener("click", function(e) {
+    if (e.target.classList.contains("deleteBtn")) {
+        e.target.parentElement.remove();
+    }
+});
+</script>
+
+</body>
+</html>
