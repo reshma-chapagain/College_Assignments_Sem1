@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+        <title>Image</title>
+        <style>
+            .container {
+
+                display : grid;
+                grid-template-columns: repeat(4, 1fr);
+                gap : 10px;
+                
+            }
+
+            .container img {
+                width:100%;
+                height: auto;
+            }
+            @media (max-width:480px) {
+                .container {
+                    grid-template-columns: repeat(1, 1fr);
+                }
+            }
+
+            @media (min-width:481px) and (max-width:768px) {
+                .container {
+                    grid-template-columns: repeat(2, 1fr);
+                }
+            }
+            @media (min-width:769px) and (max-width:1200px) {
+                .container {
+                    grid-template-columns: repeat(3, 1fr);
+                }
+            }
+
+            @media (min-width:1201px) {
+                .container {
+                    grid-template-columns: repeat(4, 1fr);
+                }
+            }
+        </style>
+    </head>
+    
+    <body>
+        <div class="container">
+            <img src="r.jpg" alt="Image 1">
+            <img src = "image4s.jpeg" >
+            <img src = "images.jpeg" >
+            <img src = "pokhara.jpg">
+
+        </div>
+    </body>
+</html>
