@@ -7,7 +7,7 @@ int main() {
     scanf("%d", &b);
 
     area = l * b;
-    perimeter = 2* (l + b);
+    perimetr = 2* (l + b);
     printf("Area is %d",area);
     printf("Perimeter is %d", perimeter);
     return 0;
