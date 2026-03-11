@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form>
+
+        <h1> Patient Intake Form</h1>
+        <fieldset> Patient Information
+            <label> Patient FUll name</label>
+            <input type="text" placeholder="Enter full name">
+            <label>
+                Age
+
+            </label>
+            <input type="number" minlength="1" maxlength="120" required>
+            <label> Blood Group</label>
+            <select>
+                <option> Enter your blood Group</option>
+                <option> A+</option>
+                <option>A-</option>
+                <option>B+</option>
+                <option> B-</option>
+                <option> O+</option>
+                <option>O-</option>
+                <option> AB+</option>
+                <option>AB-</option>
+            </select>
+
+            <label> Gender</label>
+            <input type="radio" name=Gender> Male
+            <input type="radio" name=Gender> female
+            <input type="radio" name=Gender> other
+
+            <label> COntact Number</label>
+            <input type="tel" required placeholder="98xxxxxxxx">
+    </form>
+    </fieldset>
+
+    <fieldset>
+        <legend> Medical Information</legend>
+
+
+        <label> Date of Appointment</label>
+        <input type="date" required>
+
+        <label> Preferred Time Slot</label>
+        <input type="time">
+
+
+        <label> Reason For visit</label>
+        <textarea rows="4" cols="30" placeholder="Describe your symptoms"></textarea>
+
+        <label> Medical History</label>
+        <input type="checkbox" name="Medical History"> Diabetes
+        <input type="checkbox" name="Medical History"> Heart Disease
+        <input type="checkbox" name="Medical History"> Asthma
+        <input type="checkbox" name="Medical History"> None
+        <button type="submit"> Sumbit</button>
+        <button type="reset"> Reset</button>
+    </fieldset>
+</body>
+
+</html>

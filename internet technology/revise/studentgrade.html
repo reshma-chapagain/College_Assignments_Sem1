@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <fieldset>
+            <legend> Student Grade Calculator</legend>
+            <label> Enter Your Marks</label>
+            <input type = "number"  id = "marks" placeholder="Enter marks"> <br><br>
+            <button type = "sumbit" onclick = "grade()"> Calculate Grade</button>
+            
+        </fieldset>
+         </form>
+         <p id = "grade"></p>
+
+        <script>
+            function Grade() {
+                let marks = document.getElementById("marks").value;
+                let grade = "";
+                if(marks>= 90) {
+                    grade = "A"; 
+
+                }
+                else if (marks >= 80 ) {
+                    grade = "B";
+                }
+                else if (marks >= 70) {
+                    grade = "C";
+                }
+                else {
+                    grade = "D";
+                }
+
+                document.getElementById("grade").innerText = "Your Grade" + grade;
+
+            }
+        </script>
+   
+</body>
+</html>
