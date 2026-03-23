@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+    <label>
+        Email Address
+    </label>
+    <input type = "email" id = "email">
+    <label> Confirm Email</label>
+    <input type = "email" id = "conemail">
+
+    <button type="button" onclick = "validate()"> Validate</button>
+    </form>
+    <p id = "result"></p>
+
+    <script>
+        function validate() {
+            var email = document.getElementById("email").value;
+            var conemail = document.getElementById("conemail").value;
+
+        
+
+        if (email === conemail) {
+            document.getElementById("result").innerHTML = "Email is same";
+        }
+
+        else {
+            document.getElementById("result").innerHTML = "Email is not same";
+        }
+
+    }
+    </script>
+</body>
+</html>
