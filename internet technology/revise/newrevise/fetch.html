@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #box {
+            
+            justify-content: center;
+            text-align: center;
+            align-items: center;
+            display:grid;
+            height:200px;
+            background-color: aliceblue;
+            width: 60%;
+        }
+
+        button {
+            background-color: blue;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div id = "box">
+    <input type = "text" id = "studid" >
+    <button type = "button" onclick = "stud()">Search Student</button>
+    <p id = "result"></p>
+</div>
+    <script>
+        function stud() {
+            document.getElementById("result").innerHTML = "Loading.....";
+
+            fetch("https://api.college.com/students" , {method : "GET"})
+            .then (function(response)  {
+    
+                return response.json;
+            })
+        
+            .then(function(data)
+        {
+            document.getElementById("result").innerHTML = "Student Name" + data.name + "Age" +data.age +"grade" +data.grade;
+        })
+
+            .catch(function(error)
+        {
+            document.getElementById("result").innerHTML = "Student not Found";
+        })
+        }
+        
+    </script>
+</body>
+</html>

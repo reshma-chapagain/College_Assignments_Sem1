@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #result {
+            background-color: aqua;
+
+        }
+    </style>
+</head>
+<body>
+    <p id = "result"></p>
+    <button type = "button" onclick = funciton(button)>Get Data</button>
+
+
+    <script>
+        function button() {
+        fetch("https://example.com/api/test", {method: "GET"})
+
+        .then(function(response){
+            return response.json();
+        })
+
+        .then(function(data)
+    {
+       document.getElementById("result").innerHTML = "Name is:" + data.name + "age" + data.age + "email" + data.email;
+    })
+
+
+        .catch(function(error){
+            console.log("Error is" + error);
+        })
+    }
+   </script> 
+</body>
+</html>
